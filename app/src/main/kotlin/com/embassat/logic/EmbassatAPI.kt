@@ -16,24 +16,21 @@ import rx.schedulers.Schedulers
 
 public class EmbassatAPI {
 
-    val TAG = "Embassat2015 Network"
-
     val HOST = "http://www.embassat.com/wp-json"
-    init {
-        var api = RestAdapter.Builder()
+
+    fun getArtistsService() : ArtistsApi {
+        return RestAdapter.Builder()
                 .setEndpoint(HOST)
                 .build()
                 .create(javaClass<ArtistsApi>())
-        var obs = api.getArtists()
-        obs.subscribeOn(Schedulers.newThread())
-            .observeOn(AndroidSchedulers.mainThread())
-            .onError { e -> Log.d(TAG, e.getMessage()) }
-            .subscribe { result ->
-                for(i in 0..result.size()-1){
-                    Log.d(TAG, result.get(i).title)
-                }
-            }
+    }
 
+    public fun getArtists() : Observable<List<Artist>> {
+        return getArtistsService()
+                .getArtists()
+                .subscribeOn(Schedulers.newThread())
+                .observeOn(AndroidSchedulers.mainThread())
+                .onError { e -> Log.d("EMBASSAT", e.getMessage()) }
     }
 
     trait ArtistsApi {
