@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="rxkotlin-0.22.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/rxkotlin-0.22.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
