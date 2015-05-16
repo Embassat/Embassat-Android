@@ -1,11 +1,9 @@
-package com.embassat.logic
+package com.embassat.model
 
 import android.util.Log
-import com.embassat.model.Artist
 import retrofit.RestAdapter
 import retrofit.http.GET
 import rx.Observable
-import rx.Subscriber
 import rx.android.schedulers.AndroidSchedulers
 import rx.lang.kotlin.onError
 import rx.schedulers.Schedulers

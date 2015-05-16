@@ -1,8 +1,11 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="EmbassatTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@android:color/black</item>
+    </style>
+
+    <style name="EmbassatTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
     </style>
 
 </resources>

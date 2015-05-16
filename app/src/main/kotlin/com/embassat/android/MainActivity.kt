@@ -1,41 +1,68 @@
 package com.embassat.android
 
+import android.graphics.Rect
 import android.os.Bundle
+import android.support.v4.app.ActivityCompat
 import android.support.v7.app.ActionBarActivity
-import android.util.Log
-import android.view.Menu
-import android.view.MenuItem
+import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.RecyclerView
+import android.view.*
 import android.widget.ImageView
-import com.bumptech.glide.Glide
+import android.widget.TextView
 import com.embassat.R
-import com.embassat.logic.EmbassatAPI
-import com.embassat.model.Artist
-import rx.Subscriber
-import rx.android.schedulers.AndroidSchedulers
-import rx.lang.kotlin.onError
-import rx.lang.kotlin.subscriber
-import rx.schedulers.Schedulers
 
 public class MainActivity : ActionBarActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val obs = EmbassatAPI().getArtists()
-        obs.subscribe {
-                    result ->
-                    for(i in 0..result.size()-1){
-                        Log.d("EMBASSAT", result.get(i).ID.toString())
-                        Log.d("EMBASSAT", result.get(i).title)
-                        Log.d("EMBASSAT", result.get(i).featured_image.guid)
-
-                    }
-                    showImage(result.get(0).featured_image.guid)
-                }
+        setUpMainMenu()
     }
 
-    fun showImage(image: String) {
-        val imageView = findViewById(R.id.artist_photo) as ImageView
-        Glide.with(this).load(image).into(imageView)
+    fun setUpMainMenu() {
+        val mainMenuRecyclerView = findViewById(R.id.mainMenuRecyclerView) as RecyclerView
+        val layoutManager = LinearLayoutManager(this)
+        val spacesItemDecorator = SpacesItemDecoration(getResources().getInteger(R.integer.main_menu_space_decorator))
+        mainMenuRecyclerView.addItemDecoration(spacesItemDecorator)
+        mainMenuRecyclerView.setLayoutManager(layoutManager)
+        mainMenuRecyclerView.setAdapter(MainMenuAdapter(getResources().getStringArray(R.array.activity_main_options)))
+    }
+
+    inner class MainMenuAdapter(items: Array<String>) : RecyclerView.Adapter<MainMenuAdapter.MainMenuItemViewHolder>() {
+
+        val items: Array<String> = items
+
+        override fun getItemCount(): Int {
+            return items.size()
+        }
+
+        override fun onBindViewHolder(viewHolder: MainMenuItemViewHolder, position: Int) {
+            val item = items[position]
+            viewHolder.itemMenuTextView.setText(item)
+        }
+
+        override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): MainMenuItemViewHolder? {
+            val view = LayoutInflater.from(parent?.getContext()).inflate(R.layout.item_main, parent, false)
+            return MainMenuItemViewHolder(view);
+        }
+
+        inner class MainMenuItemViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+            val itemMenuTextView = view.findViewById(R.id.itemMenuTextView) as TextView
+        }
+
+    }
+
+    inner class SpacesItemDecoration(space: Int) : RecyclerView.ItemDecoration() {
+
+        val space = space
+
+        override fun getItemOffsets(outRect: Rect, view: View, parent: RecyclerView, state: RecyclerView.State) {
+            outRect.left = space;
+            outRect.right = space;
+            outRect.bottom = space;
+
+            if(parent.getChildAdapterPosition(view) == 0)
+                outRect.top = space*5;
+        }
     }
 }

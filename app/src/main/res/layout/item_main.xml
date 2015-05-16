@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:paddingTop="@dimen/activity_main_item_padding"
+                android:paddingBottom="@dimen/activity_main_item_padding">
+
+    <TextView
+            android:id="@+id/itemMenuTextView"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textSize="@dimen/activity_main_item_text_size"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</RelativeLayout>

@@ -1,4 +1,16 @@
 <resources>
-    <string name="app_name">Embassat2015</string>
+
+    <string name="app_name">Embassa\'t</string>
+
+    <!-- MAIN -->
     <string name="title_activity_main">MainActivity</string>
+    <string-array name="activity_main_options">
+        <item>I N F O R M A C I Ó</item>
+        <item>A R T I S T E S</item>
+        <item>H O R A R I S</item>
+        <item>M A P A</item>
+        <item>E N T R A D E S</item>
+        <item>E M B A F A \'T</item>
+        <item>E X T R E S</item>
+    </string-array>
 </resources>
