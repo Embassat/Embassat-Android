@@ -83,6 +83,7 @@ public class MainActivity : AppCompatActivity() {
                 1 -> navigate<ArtistsActivity>()
                 2 -> navigate<ScheduleActivity>()
                 4 -> navigate<TicketsActivity>()
+                5 -> navigate<ExtresActivity>()
             }
         }
     }

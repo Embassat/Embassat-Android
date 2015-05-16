@@ -55,4 +55,33 @@
 
     <string name="tickets_content_3_1"><u>Dues nits a l\'Hotel Urpí *** + abonament per a dues persones: 140€</u></string>
     <string name="tickets_content_3_2"><u>Socis del TresC descomptes exclusius</u></string>
+
+    <!-- EXTRES -->
+    <string name="title_activity_extres">Extres</string>
+
+    <string name="extres_item_title_1">L A&#160;&#160;&#160;P R È V I A</string>
+    <string name="extres_item_title_2">F I R A</string>
+    <string name="extres_item_title_3">P E T I T&#160;&#160;&#160;E M\'</string>
+
+    <string name="extres_time_1">22:00</string>
+    <string name="extres_time_2">12:00</string>
+    <string name="extres_time_3">18:00</string>
+
+    <string name="extres_text_1_a"><b>Sala Balboa</b></string>
+    <string name="extres_text_1_b">(Amb abonament del festival o 5€ a taquilla)</string>
+    <string name="extres_text_1_c">El festival ja arranca el mateix dimecres 25, el Balboa - com no podia ser cap altre - acull el concert inaugural a una de les sales que està apostant més fort per la música en viu, l\'escena i el circuït. L\'inclassificable Esperit! Presenta \"La lluminosa\" brillant concert-espectacle d\'un dels fenòmens de la música en català. La sessió de Diego Armando Dj tancarà la primera nit amb el rock més boig que porta la tramuntana.</string>
+
+    <string name="extres_text_2_a">La jornada del dissabte 28 de juny, la Plaça del Gas serà l\'àgora de la primera mostra de discogràfiques independents i entitats locals relacionades amb l\'àmbit cultural. La fira FEM EMBASSA\'T es convertirà en un aparador de totes aquelles novetats i propostes alternatives i fresques que no tenen cabuda al circuït habitual i on primarà el producte gestat a la comarca del Vallès. La Fira vol ser una plataforma d\'exposició que les entitats poden utilitzar per tal de donar-se a conèixer a tota la ciutat. És per això que de 12.00 a 20.00 hores, la Fira tindrà un accés gratuït a tot el públic, amb programació oberta, composada per concerts en format reduït.\nStands participants a la fira FEM EMBASSA\'T: MamaVynila, Jaquard Records, La Produktiva, BCore Disc, Bankrobber, Famelic, La Castanya, Shookdown i la Fonoteca, La Llançadora, CoolturaFM i d\'altres.</string>
+    <string name="extres_text_2_b"><b>PROGRAMACIÓ:</b></string>
+    <string name="extres_text_2_c">13:00 - Cumbia Man</string>
+    <string name="extres_text_2_d">14:00 - Albufera</string>
+    <string name="extres_text_2_e">16:30 - Monterrey</string>
+    <string name="extres_text_2_f">17:30 - Ocellot</string>
+    <string name="extres_text_2_g">18:30 - Autodestrucció</string>
+
+    <string name="extres_text_3_a">Concebut per donar un servei d\'oci al públic més petit, el Petit EMBASSA\'T torna a obrir un any més la programació dels Jardins de l\'Espai Cultura amb una programació variada i pensada pels més menuts que busca acostar la cultura a les futures generacions. Eina per transmetre de pares a fills la passió per la música, la cultura i les activitats de lleure. L\'oferta d\'enguany es composa pel taller d\'iniciació al \"Fingerboards\" o \"Skate de dits\" a càrrec del campió sabadellenc Arnau Espejo, l\'espectacle interactiu de percussió analògica de la mà del col·lectiu avantguardista ALKU i el plat fort de la trobada, el concert del trobador local Carles Belda amb l\'espectacle \"Petita Festa\". A més, gràcies a la gentilesa de Saltimbanki, els menuts podran gaudir d\'una sèrie de jocs sostenibles i tallers.</string>
+    <string name="extres_text_3_b"><b>ALKU – \"Globus i hexàgons\"</b></string>
+    <string name="extres_text_3_c">18.00 hores. Escenari Gran</string>
+    <string name="extres_text_3_d"><b>CARLES BELDA</b></string>
+    <string name="extres_text_3_e">18.30. Escenari Gran</string>
 </resources>
