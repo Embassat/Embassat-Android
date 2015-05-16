@@ -1,0 +1,73 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MergeRootFrame">
+
+
+    <LinearLayout
+        android:id="@+id/days_header_tabbar"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="?android:attr/actionBarSize">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:text="@string/horaris_tab1"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:layout_width="@dimen/activity_main_item_separator_height"
+            android:background="@android:color/black"
+            android:layout_height="match_parent"/>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:text="@string/horaris_tab2"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:layout_width="@dimen/activity_main_item_separator_height"
+            android:background="@android:color/black"
+            android:layout_height="match_parent"/>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:text="@string/horaris_tab3"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@android:color/black"
+        android:layout_height="@dimen/activity_main_item_separator_height"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/schedule_list_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

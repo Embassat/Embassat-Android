@@ -81,6 +81,7 @@ public class MainActivity : AppCompatActivity() {
             when (position) {
                 0 -> navigate<InfoActivity>()
                 1 -> navigate<ArtistsActivity>()
+                2 -> navigate<ScheduleActivity>()
             }
         }
     }

@@ -20,6 +20,7 @@
         </activity>
         <activity android:name=".android.InfoActivity" />
         <activity android:name=".android.ArtistsActivity" />
+        <activity android:name=".android.ScheduleActivity" />
     </application>
 
 </manifest>

@@ -6,4 +6,5 @@ package com.embassat.model
 data class Artist (
         val ID: Long,
         val title: String,
+        val date: String,
         val featured_image: FeaturedImage)

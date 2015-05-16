@@ -29,4 +29,14 @@
     <string name="info_fourth_section_title">M i r a d o r&#160;&#160;&#160;e l e c t r ò n i c</string>
     <string name="info_fourth_section_content">El Museu del Gas acull a dalt de tot del seu modern edifici un espai envejable, tan per les seves vistes com per la seva cuidada proposta. Una finestra oberta a la emergent electrònica barcelonina que ens acosta les sonoritats, bits i ritmes més contemporanis per contemplar el panorama que vindrà. Cinc hores diàries per submergir-nos en aquest fascinant univers. La cirereta més exclusiva del festival. Fins a completar aforament, 250 persones.</string>
 
+    <!-- HORARIS -->
+    <string name="title_activity_horaris">Horaris</string>
+    <string name="horaris_tab0">DIM</string>
+    <string name="horaris_tab1">DIJ</string>
+    <string name="horaris_tab2">DIV</string>
+    <string name="horaris_tab3">DIS</string>
+
+    <string name="horaris_escenari1">Mirador</string>
+    <string name="horaris_escenari2">Amfiteatre Yeearphone</string>
+    <string name="horaris_escenari3">Escenari Gran</string>
 </resources>
