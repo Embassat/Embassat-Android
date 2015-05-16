@@ -39,4 +39,20 @@
     <string name="horaris_escenari1">Mirador</string>
     <string name="horaris_escenari2">Amfiteatre Yeearphone</string>
     <string name="horaris_escenari3">Escenari Gran</string>
+
+    <!-- ENTRADES -->
+    <string name="tickets_subtitle_1">P R E U S&#160;&#160;&#160;A B O N A M E N T</string>
+
+    <string name="tickets_content_1_1"><u>Fins al 26 de juny: 35€</u></string>
+    <string name="tickets_content_1_2">A taquilla: 40€</string>
+
+    <string name="tickets_subtitle_2">E N T R A D A&#160;&#160;&#160;D\' U N&#160;&#160;&#160;D I A</string>
+
+    <string name="tickets_content_2_1"><u>Divendres o dissabte: 25€</u></string>
+    <string name="tickets_content_2_2">A taquilla: 30€</string>
+
+    <string name="tickets_subtitle_3">H O T E L&#160;&#160;&#160;+&#160;&#160;&#160;A B O N A M E N T</string>
+
+    <string name="tickets_content_3_1"><u>Dues nits a l\'Hotel Urpí *** + abonament per a dues persones: 140€</u></string>
+    <string name="tickets_content_3_2"><u>Socis del TresC descomptes exclusius</u></string>
 </resources>

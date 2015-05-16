@@ -21,6 +21,7 @@
         <activity android:name=".android.InfoActivity" />
         <activity android:name=".android.ArtistsActivity" />
         <activity android:name=".android.ScheduleActivity" />
+        <activity android:name=".android.TicketsActivity" />
     </application>
 
 </manifest>
