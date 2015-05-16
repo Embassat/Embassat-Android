@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red_escenari">#ffe30034</color>
+    <color name="red_active_escenari">#fffbd1d9</color>
+    <color name="blue_escenari">#ff10348f</color>
+    <color name="blue_active_escenari">#ffcfdaec</color>
+    <color name="yellow_escenari">#ffe8c511</color>
+    <color name="yellow_active_escenari">#fffbf4d2</color>
+</resources>

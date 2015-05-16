@@ -1,9 +1,11 @@
 package com.embassat.android
 
+import android.content.Context
+import android.content.Intent
 import android.graphics.Rect
 import android.os.Bundle
 import android.support.v4.app.ActivityCompat
-import android.support.v7.app.ActionBarActivity
+import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.view.*
@@ -11,7 +13,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.embassat.R
 
-public class MainActivity : ActionBarActivity() {
+public class MainActivity : AppCompatActivity() {
+
+    var mainMenuRecyclerView : RecyclerView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,12 +24,12 @@ public class MainActivity : ActionBarActivity() {
     }
 
     fun setUpMainMenu() {
-        val mainMenuRecyclerView = findViewById(R.id.mainMenuRecyclerView) as RecyclerView
+        mainMenuRecyclerView = findViewById(R.id.mainMenuRecyclerView) as RecyclerView
         val layoutManager = LinearLayoutManager(this)
         val spacesItemDecorator = SpacesItemDecoration(getResources().getInteger(R.integer.main_menu_space_decorator))
-        mainMenuRecyclerView.addItemDecoration(spacesItemDecorator)
-        mainMenuRecyclerView.setLayoutManager(layoutManager)
-        mainMenuRecyclerView.setAdapter(MainMenuAdapter(getResources().getStringArray(R.array.activity_main_options)))
+        mainMenuRecyclerView?.addItemDecoration(spacesItemDecorator)
+        mainMenuRecyclerView?.setLayoutManager(layoutManager)
+        mainMenuRecyclerView?.setAdapter(MainMenuAdapter(getResources().getStringArray(R.array.activity_main_options)))
     }
 
     inner class MainMenuAdapter(items: Array<String>) : RecyclerView.Adapter<MainMenuAdapter.MainMenuItemViewHolder>() {
@@ -47,6 +51,10 @@ public class MainActivity : ActionBarActivity() {
         }
 
         inner class MainMenuItemViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+            {
+                view.setOnClickListener(OnMenuItemClickListener())
+            }
+
             val itemMenuTextView = view.findViewById(R.id.itemMenuTextView) as TextView
         }
 
@@ -64,5 +72,16 @@ public class MainActivity : ActionBarActivity() {
             if(parent.getChildAdapterPosition(view) == 0)
                 outRect.top = space*5;
         }
+    }
+
+    inner class OnMenuItemClickListener : View.OnClickListener {
+
+        override fun onClick(view: View) {
+            val position = mainMenuRecyclerView?.getChildAdapterPosition(view)
+            when (position) {
+                0 -> navigate<InfoActivity>()
+            }
+        }
+
     }
 }

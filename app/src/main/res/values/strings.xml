@@ -12,4 +12,21 @@
         <item>E N T R A D E S</item>
         <item>E X T R E S</item>
     </string-array>
+
+    <!-- INFORMACIÓ -->
+    <string name="title_activity_info">Informació</string>
+
+    <string name="info_first_section_title">Q u è&#160;&#160;&#160;é s&#160;&#160;&#160;l\' E M B A S S A\' T?</string>
+    <string name="info_first_section_content">L\'EMBASSA\'T és el teu festival. Et portem ben a prop els millors artistes d\'aquí i d\'allà, les bandes més potents de l\'emergent panorama i els noms que trepitgen amb més ganes l\'escena del moment.\n\nAmb tu volem continuar sent el motor perquè un cop més s\'accelerin els fets, compartim els millors directes amb els teus amics en racons que mai els haguessis vist d\'aquesta manera, i d\'una forma única i privilegiada.\n\n3 escenaris de luxe. Un ventall musical envejable. Apte per tots: des del Petit Embassa\'t,  els més tranquils, folks, pels que canten pop, criden punk o ballen rock, fins als que vulguin tancar les portes a ritme de hits més electrònics.\n\nAjuda\'ns a fer-nos més sostenibles, tu també pots fer-nos millors i més grans. Suma\'t a l\'EMBASSA\'T, El Festival Independent del Vallès. El festival que fa falta a Catalunya.</string>
+
+
+    <string name="info_second_section_title">E s c e n a r i&#160;&#160;&#160;P r i n c i p a l</string>
+    <string name="info_second_section_content">Dins dels magnífics Jardins de l\'Espai Cultura de la Fundació Sabadell 1859 pugen a l\'escenari les propostes més fermes de l\'escena del moment. Bandes que fa anys que criden un nom i un lloc, fins a grups més joves amb un insultant descaro, és aquí i ara on juguen les millors cartes. Sens dubte on es viu l\'esclat del festival i on sempre podràs dir que hauràs vist els millors grups del demà.  Aforament 1.000 persones.</string>
+
+    <string name="info_third_section_title">A m f i t e a t r e</string>
+    <string name="info_third_section_content">Dins el recinte principal tenim la petita joia del festival. Les grades, la buguenvíl·lia, la llum, l\'atmosfera que es palpa concert rere concert fan que des de les propostes més íntimes, al folk, cantautors, l\'electrònica soft o més dura, al rock directe, garage o punk tinguin un contacte que mai abans hauràs viscut. Tota una experiència musical. Aforament amb butaca limitat 300 persones aproximadament.</string>
+
+    <string name="info_fourth_section_title">M i r a d o r&#160;&#160;&#160;e l e c t r ò n i c</string>
+    <string name="info_fourth_section_content">El Museu del Gas acull a dalt de tot del seu modern edifici un espai envejable, tan per les seves vistes com per la seva cuidada proposta. Una finestra oberta a la emergent electrònica barcelonina que ens acosta les sonoritats, bits i ritmes més contemporanis per contemplar el panorama que vindrà. Cinc hores diàries per submergir-nos en aquest fascinant univers. La cirereta més exclusiva del festival. Fins a completar aforament, 250 persones.</string>
+
 </resources>
