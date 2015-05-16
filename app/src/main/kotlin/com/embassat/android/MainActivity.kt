@@ -26,7 +26,7 @@ public class MainActivity : AppCompatActivity() {
     fun setUpMainMenu() {
         mainMenuRecyclerView = findViewById(R.id.mainMenuRecyclerView) as RecyclerView
         val layoutManager = LinearLayoutManager(this)
-        val spacesItemDecorator = SpacesItemDecoration(getResources().getInteger(R.integer.main_menu_space_decorator))
+        val spacesItemDecorator = SpacesItemDecoration(getResources().getInteger(R.integer.space_decorator))
         mainMenuRecyclerView?.addItemDecoration(spacesItemDecorator)
         mainMenuRecyclerView?.setLayoutManager(layoutManager)
         mainMenuRecyclerView?.setAdapter(MainMenuAdapter(getResources().getStringArray(R.array.activity_main_options)))
@@ -46,7 +46,7 @@ public class MainActivity : AppCompatActivity() {
         }
 
         override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): MainMenuItemViewHolder? {
-            val view = LayoutInflater.from(parent?.getContext()).inflate(R.layout.item_main, parent, false)
+            val view = LayoutInflater.from(parent?.getContext()).inflate(R.layout.item_basic_text, parent, false)
             return MainMenuItemViewHolder(view);
         }
 
@@ -55,7 +55,7 @@ public class MainActivity : AppCompatActivity() {
                 view.setOnClickListener(OnMenuItemClickListener())
             }
 
-            val itemMenuTextView = view.findViewById(R.id.itemMenuTextView) as TextView
+            val itemMenuTextView = view.findViewById(R.id.itemBasicTextTextView) as TextView
         }
 
     }
@@ -80,8 +80,8 @@ public class MainActivity : AppCompatActivity() {
             val position = mainMenuRecyclerView?.getChildAdapterPosition(view)
             when (position) {
                 0 -> navigate<InfoActivity>()
+                1 -> navigate<ArtistsActivity>()
             }
         }
-
     }
 }

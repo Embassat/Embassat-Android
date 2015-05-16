@@ -19,6 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".android.InfoActivity" />
+        <activity android:name=".android.ArtistsActivity" />
     </application>
 
 </manifest>
