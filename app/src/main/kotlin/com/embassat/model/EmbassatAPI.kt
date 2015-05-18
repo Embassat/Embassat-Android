@@ -12,7 +12,7 @@ import rx.schedulers.Schedulers
  * Created by Quique on 14/04/15.
  */
 
-public class EmbassatAPI {
+private class EmbassatAPI {
 
     val HOST = "http://www.embassat.com/wp-json"
 
