@@ -12,8 +12,10 @@ import android.view.ViewGroup
 import android.widget.TextView
 import com.embassat.R
 import com.embassat.model.Artist
-import com.embassat.model.EmbassatAPI
 import com.embassat.model.EmbassatModel
+import com.embassat.presentation.entity.ArtistName
+import com.embassat.presentation.presenter.ArtistsPresenter
+import com.embassat.presentation.view.ArtistsView
 import rx.Observable
 import java.util.ArrayList
 
@@ -21,85 +23,39 @@ import java.util.ArrayList
  * Created by Quique on 16/5/15.
  */
 
-public class ArtistsActivity : AppCompatActivity() {
+public class ArtistsActivity : BaseActivity(), ArtistsView {
+    override fun navigateToDetail(id: Long) {
+        throw UnsupportedOperationException()
+    }
 
-    var artistsRecyclerView: RecyclerView? = null
-    val artists: MutableList<Artist> = ArrayList()
-    val mainMenuAdapter: MainMenuAdapter = MainMenuAdapter(artists)
+    override val layoutResource: Int = R.layout.activity_artists
+
+    val adapter = ArtistNameAdapter()
+    val presenter = ArtistsPresenter(this, observable, )
+    val recycler : RecyclerView by bindView(R.id.artistsRecyclerView)
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_artists)
-        setUpMainMenu()
+        super<BaseActivity>.onCreate(savedInstanceState)
+        init()
     }
 
-    fun setUpMainMenu() {
-        artistsRecyclerView = findViewById(R.id.artistsRecyclerView) as RecyclerView
+    fun init() {
         val layoutManager = LinearLayoutManager(this)
-        val spacesItemDecorator = SpacesItemDecoration(getResources().getInteger(R.integer.space_decorator))
-        artistsRecyclerView?.addItemDecoration(spacesItemDecorator)
-        artistsRecyclerView?.setLayoutManager(layoutManager)
-        artistsRecyclerView?.setAdapter(mainMenuAdapter)
-        val artistsObservable: Observable<List<Artist>> = EmbassatModel().getArtists()
-        artistsObservable.subscribe{result -> onNewArtists(result)}
+        recycler.setLayoutManager(layoutManager)
+        recycler.setAdapter(adapter)
     }
 
-    fun onNewArtists(newArtists: List<Artist>) {
-        artists.clear()
-        artists.addAll(newArtists)
-        mainMenuAdapter.notifyDataSetChanged()
+    override fun onResume() {
+        super<BaseActivity>.onResume()
+        presenter.onResume()
     }
 
-    inner class MainMenuAdapter(items: List<Artist>) : RecyclerView.Adapter<MainMenuAdapter.MainMenuItemViewHolder>() {
-
-        val items: List<Artist> = items
-
-        override fun getItemCount(): Int {
-            return items.size()
-        }
-
-        override fun onBindViewHolder(viewHolder: MainMenuItemViewHolder, position: Int) {
-            val item = items[position]
-            viewHolder.itemArtistTextView.setText(item.title)
-        }
-
-        override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): MainMenuItemViewHolder? {
-            val view = LayoutInflater.from(parent?.getContext()).inflate(R.layout.item_basic_text, parent, false)
-            return MainMenuItemViewHolder(view);
-        }
-
-        inner class MainMenuItemViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-            {
-                view.setOnClickListener(OnMenuItemClickListener())
-            }
-
-            val itemArtistTextView = view.findViewById(R.id.itemBasicTextTextView) as TextView
-        }
-
+    override fun onPause() {
+        super<BaseActivity>.onPause()
+        presenter.onPause()
     }
 
-    inner class SpacesItemDecoration(space: Int) : RecyclerView.ItemDecoration() {
-
-        val space = space
-
-        override fun getItemOffsets(outRect: Rect, view: View, parent: RecyclerView, state: RecyclerView.State) {
-            outRect.left = space;
-            outRect.right = space;
-            outRect.bottom = space;
-
-            if(parent.getChildAdapterPosition(view) == 0)
-                outRect.top = space;
-        }
+    override fun showArtists(artists: List<ArtistName>) {
+        adapter.items = artists
     }
-
-    inner class OnMenuItemClickListener : View.OnClickListener {
-
-        override fun onClick(view: View) {
-            val position = artistsRecyclerView?.getChildAdapterPosition(view)
-            when (position) {
-                //TODO navigate artist detail
-            }
-        }
-    }
-
 }

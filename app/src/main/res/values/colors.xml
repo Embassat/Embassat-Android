@@ -6,4 +6,8 @@
     <color name="blue_active_escenari">#ffcfdaec</color>
     <color name="yellow_escenari">#ffe8c511</color>
     <color name="yellow_active_escenari">#fffbf4d2</color>
+
+    <color name="primary">#ffec4252</color>
+    <color name="primaryDark">#ffce4050</color>
+    <color name="accent">#ff01003c</color>
 </resources>

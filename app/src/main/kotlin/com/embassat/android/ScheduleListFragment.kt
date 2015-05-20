@@ -10,7 +10,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import com.embassat.R
 import com.embassat.model.Artist
-import com.embassat.model.EmbassatAPI
+import com.embassat.model.EmbassatModel
 import rx.Observable
 import java.util.ArrayList
 
@@ -47,7 +47,7 @@ public class ScheduleListFragment : Fragment() {
         val layoutManager = LinearLayoutManager(getActivity())
         artistsRecyclerView?.setLayoutManager(layoutManager)
         artistsRecyclerView?.setAdapter(mainMenuAdapter)
-        val artistsObservable: Observable<List<Artist>> = EmbassatAPI().getArtists()
+        val artistsObservable: Observable<List<Artist>> = EmbassatModel().getArtists()
         artistsObservable.subscribe{result -> setDayArtists(result)}
     }
 
