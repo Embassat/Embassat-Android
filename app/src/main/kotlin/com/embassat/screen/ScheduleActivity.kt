@@ -1,4 +1,4 @@
-package com.embassat.android
+package com.embassat.screen
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -11,6 +11,7 @@ import android.view.ViewGroup
 import android.widget.RelativeLayout
 import android.widget.TextView
 import com.embassat.R
+import com.embassat.screen.ScheduleListFragment
 
 /**
  * Created by Quique on 16/5/15.

@@ -1,4 +1,4 @@
-package com.embassat.android
+package com.embassat.extension
 
 /**
  * Created by Quique on 20/05/15.
@@ -6,6 +6,7 @@ package com.embassat.android
 import android.app.Activity
 import android.app.Dialog
 import android.app.Fragment
+import android.support.v4.app
 import android.support.v7.widget.RecyclerView.ViewHolder
 import android.view.View
 import android.view.ViewGroup
@@ -16,28 +17,28 @@ fun <T : View> ViewGroup.bindView(id: Int): ReadOnlyProperty<Any, T> = ViewBindi
 fun <T : View> Activity.bindView(id: Int): ReadOnlyProperty<Any, T> = ViewBinding(id)
 fun <T : View> Dialog.bindView(id: Int): ReadOnlyProperty<Any, T> = ViewBinding(id)
 fun <T : View> Fragment.bindView(id: Int): ReadOnlyProperty<Any, T> = ViewBinding(id)
-fun <T : View> SupportFragment.bindView(id: Int): ReadOnlyProperty<Any, T> = ViewBinding(id)
+fun <T : View> app.Fragment.bindView(id: Int): ReadOnlyProperty<Any, T> = ViewBinding(id)
 fun <T : View> ViewHolder.bindView(id: Int): ReadOnlyProperty<Any, T> = ViewBinding(id)
 
 fun <T : View> ViewGroup.bindOptionalView(id: Int): ReadOnlyProperty<Any, T?> = OptionalViewBinding(id)
 fun <T : View> Activity.bindOptionalView(id: Int): ReadOnlyProperty<Any, T?> = OptionalViewBinding(id)
 fun <T : View> Dialog.bindOptionalView(id: Int): ReadOnlyProperty<Any, T?> = OptionalViewBinding(id)
 fun <T : View> Fragment.bindOptionalView(id: Int): ReadOnlyProperty<Any, T?> = OptionalViewBinding(id)
-fun <T : View> SupportFragment.bindOptionalView(id: Int): ReadOnlyProperty<Any, T?> = OptionalViewBinding(id)
+fun <T : View> app.Fragment.bindOptionalView(id: Int): ReadOnlyProperty<Any, T?> = OptionalViewBinding(id)
 fun <T : View> ViewHolder.bindOptionalView(id: Int): ReadOnlyProperty<Any, T?> = OptionalViewBinding(id)
 
 fun <T : View> ViewGroup.bindViews(vararg ids: Int): ReadOnlyProperty<Any, List<T>> = ViewListBinding(ids)
 fun <T : View> Activity.bindViews(vararg ids: Int): ReadOnlyProperty<Any, List<T>> = ViewListBinding(ids)
 fun <T : View> Dialog.bindViews(vararg ids: Int): ReadOnlyProperty<Any, List<T>> = ViewListBinding(ids)
 fun <T : View> Fragment.bindViews(vararg ids: Int): ReadOnlyProperty<Any, List<T>> = ViewListBinding(ids)
-fun <T : View> SupportFragment.bindViews(vararg ids: Int): ReadOnlyProperty<Any, List<T>> = ViewListBinding(ids)
+fun <T : View> app.Fragment.bindViews(vararg ids: Int): ReadOnlyProperty<Any, List<T>> = ViewListBinding(ids)
 fun <T : View> ViewHolder.bindViews(vararg ids: Int): ReadOnlyProperty<Any, List<T>> = ViewListBinding(ids)
 
 fun <T : View> ViewGroup.bindOptionalViews(vararg ids: Int): ReadOnlyProperty<Any, List<T>> = OptionalViewListBinding(ids)
 fun <T : View> Activity.bindOptionalViews(vararg ids: Int): ReadOnlyProperty<Any, List<T>> = OptionalViewListBinding(ids)
 fun <T : View> Dialog.bindOptionalViews(vararg ids: Int): ReadOnlyProperty<Any, List<T>> = OptionalViewListBinding(ids)
 fun <T : View> Fragment.bindOptionalViews(vararg ids: Int): ReadOnlyProperty<Any, List<T>> = OptionalViewListBinding(ids)
-fun <T : View> SupportFragment.bindOptionalViews(vararg ids: Int): ReadOnlyProperty<Any, List<T>> = OptionalViewListBinding(ids)
+fun <T : View> app.Fragment.bindOptionalViews(vararg ids: Int): ReadOnlyProperty<Any, List<T>> = OptionalViewListBinding(ids)
 fun <T : View> ViewHolder.bindOptionalViews(vararg ids: Int): ReadOnlyProperty<Any, List<T>> = OptionalViewListBinding(ids)
 
 private fun findView<T : View>(thisRef: Any, id: Int): T? {
@@ -47,7 +48,7 @@ private fun findView<T : View>(thisRef: Any, id: Int): T? {
         is Activity -> thisRef.findViewById(id)
         is Dialog -> thisRef.findViewById(id)
         is Fragment -> thisRef.getView().findViewById(id)
-        is SupportFragment -> thisRef.getView().findViewById(id)
+        is app.Fragment -> thisRef.getView().findViewById(id)
         is ViewHolder -> thisRef.itemView.findViewById(id)
         else -> throw IllegalStateException("Unable to find views on type.")
     } as T?

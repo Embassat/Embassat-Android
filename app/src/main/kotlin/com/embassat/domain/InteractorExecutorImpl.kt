@@ -1,4 +1,4 @@
-package com.embassat.android
+package com.embassat.domain
 
 import com.embassat.domain.interactor.base.Bus
 import com.embassat.domain.interactor.base.Interactor

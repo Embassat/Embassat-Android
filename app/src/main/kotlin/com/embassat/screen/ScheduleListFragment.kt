@@ -1,4 +1,4 @@
-package com.embassat.android
+package com.embassat.screen
 
 import android.os.Bundle
 import android.support.v4.app.Fragment

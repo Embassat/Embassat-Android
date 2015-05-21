@@ -16,7 +16,6 @@ public class CloudArtistDataSet(val language: String, val embassatService: Embas
     }
 
     override fun requestArtists(): List<Artist> {
-        // Search for coldplay similar artists.
         val result = embassatService.getArtists()
         return ArtistMapper().transform(result)
     }

@@ -1,4 +1,4 @@
-package com.embassat.android
+package com.embassat.domain
 
 import android.os.Handler
 import android.os.Looper

@@ -1,9 +1,10 @@
-package com.embassat.android
+package com.embassat.base
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
 import com.embassat.R
+import com.embassat.extension.bindView
 
 /**
  * Created by Quique on 20/05/15.
@@ -17,6 +18,8 @@ abstract class BaseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(layoutResource)
-        setSupportActionBar(toolbar)
+        init()
     }
+
+    abstract fun init()
 }
