@@ -67,7 +67,7 @@
         android:layout_height="@dimen/activity_main_item_separator_height"/>
 
     <android.support.v4.view.ViewPager
-        android:id="@+id/schedule_list_view_pager"
+        android:id="@+id/schedule_view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 </LinearLayout>
