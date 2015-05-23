@@ -1,4 +1,4 @@
-package com.embassat.android
+package com.embassat.domain
 
 import android.content.Context
 import com.path.android.jobqueue.JobManager

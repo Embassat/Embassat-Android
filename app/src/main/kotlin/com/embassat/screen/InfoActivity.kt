@@ -1,7 +1,6 @@
-package com.embassat.android
+package com.embassat.screen
 
 import android.os.Bundle
-import android.support.v4.content.res.ResourcesCompat
 import android.support.v7.app.AppCompatActivity
 import android.widget.ImageView
 import com.bumptech.glide.Glide

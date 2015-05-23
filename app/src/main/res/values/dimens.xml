@@ -8,4 +8,6 @@
     <dimen name="activity_main_item_padding">20dp</dimen>
     <dimen name="activity_main_item_separator_height">2dp</dimen>
     <dimen name="activity_main_item_text_size">18sp</dimen>
+    <dimen name="main_option_text_size">40sp</dimen>
+    <dimen name="main_option_text_margin_top">20dp</dimen>
 </resources>

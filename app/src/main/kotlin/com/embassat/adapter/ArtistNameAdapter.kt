@@ -1,4 +1,4 @@
-package com.embassat.android
+package com.embassat.adapter
 
 import android.support.v4.view.LayoutInflaterCompat
 import android.support.v7.widget.RecyclerView
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import com.embassat.R
+import com.embassat.extension.bindView
 import com.embassat.presentation.entity.ArtistName
 
 /**

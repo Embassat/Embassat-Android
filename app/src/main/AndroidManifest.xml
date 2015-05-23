@@ -3,14 +3,16 @@
     package="com.embassat" >
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/EmbassatTheme" >
         <activity
-            android:name=".android.MainActivity"
+            android:name=".screen.MainActivity"
             android:theme="@style/EmbassatTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,11 +20,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".android.InfoActivity" />
-        <activity android:name=".android.ArtistsActivity" />
-        <activity android:name=".android.ScheduleActivity" />
-        <activity android:name=".android.TicketsActivity" />
-        <activity android:name=".android.ExtresActivity" />
+        <activity android:name=".screen.InfoActivity" />
+        <activity android:name=".screen.ArtistsActivity"
+                  android:theme="@style/EmbassatTheme.NoActionBar" />
+        <activity android:name=".screen.ScheduleActivity" />
+        <activity android:name=".screen.TicketsActivity" />
+        <activity android:name=".screen.ExtraActivity" />
     </application>
 
 </manifest>

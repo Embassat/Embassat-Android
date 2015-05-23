@@ -3,7 +3,8 @@
     <style name="EmbassatTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primaryDark</item>
-        <item name="colorAccent">@color/accent</item>
+        <item name="colorAccent">@color/background</item>
+        <item name="android:windowBackground">@color/background</item>
     </style>
 
     <style name="EmbassatTheme.NoActionBar">

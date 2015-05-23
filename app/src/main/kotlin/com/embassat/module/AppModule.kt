@@ -1,6 +1,9 @@
-package com.embassat.android
+package com.embassat.module
 
 import android.content.Context
+import com.embassat.domain.BusImpl
+import com.embassat.domain.CustomJobManager
+import com.embassat.domain.InteractorExecutorImpl
 import com.embassat.domain.interactor.base.Bus
 import com.embassat.domain.interactor.base.InteractorExecutor
 import com.path.android.jobqueue.JobManager

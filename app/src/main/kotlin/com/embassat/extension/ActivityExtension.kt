@@ -1,4 +1,4 @@
-package com.embassat.android
+package com.embassat.extension
 
 import android.app.Activity
 import android.content.Context

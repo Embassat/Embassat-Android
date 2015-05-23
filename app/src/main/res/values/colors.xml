@@ -7,7 +7,7 @@
     <color name="yellow_escenari">#ffe8c511</color>
     <color name="yellow_active_escenari">#fffbf4d2</color>
 
-    <color name="primary">#ffec4252</color>
-    <color name="primaryDark">#ffce4050</color>
-    <color name="accent">#ff01003c</color>
+    <color name="primary">#fff05158</color>
+    <color name="primaryDark">#ffd25057</color>
+    <color name="background">#ff000543</color>
 </resources>
