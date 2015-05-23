@@ -8,4 +8,11 @@
     android:background="?attr/colorPrimary"
     android:fitsSystemWindows="true"
     app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+    <com.embassat.view.NoeDisplayTextView
+        android:id="@+id/toolbar_title"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/toolbar_title_text_size"/>
+</android.support.v7.widget.Toolbar>

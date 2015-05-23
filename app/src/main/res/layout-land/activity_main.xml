@@ -11,26 +11,18 @@
         android:orientation="vertical">
         <com.embassat.view.NoeDisplayTextView
             android:id="@+id/main_option_info"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/main_option_text_size"
+            android:textColor="@drawable/main_text_color"
+            style="@style/MainMenuOptionText"
             android:text="@string/main_option_info"/>
         <com.embassat.view.NoeDisplayTextView
             android:id="@+id/main_option_artists"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/main_option_text_margin_top"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/main_option_text_size"
+            style="@style/MainMenuOptionText"
             android:text="@string/main_option_artists"/>
         <com.embassat.view.NoeDisplayTextView
             android:id="@+id/main_option_schedule"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/main_option_text_margin_top"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/main_option_text_size"
+            style="@style/MainMenuOptionText"
             android:text="@string/main_option_schedule"/>
     </LinearLayout>
     <LinearLayout
@@ -41,26 +33,18 @@
         android:orientation="vertical">
         <com.embassat.view.NoeDisplayTextView
             android:id="@+id/main_option_map"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/main_option_text_size"
+            android:textColor="@drawable/main_text_color"
+            style="@style/MainMenuOptionText"
             android:text="@string/main_option_map"/>
         <com.embassat.view.NoeDisplayTextView
             android:id="@+id/main_option_tickets"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/main_option_text_margin_top"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/main_option_text_size"
+            style="@style/MainMenuOptionText"
             android:text="@string/main_option_tickets"/>
         <com.embassat.view.NoeDisplayTextView
             android:id="@+id/main_option_extra"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/main_option_text_margin_top"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/main_option_text_size"
+            style="@style/MainMenuOptionText"
             android:text="@string/main_option_extra"/>
     </LinearLayout>
 </LinearLayout>

@@ -23,10 +23,11 @@ public class ArtistsActivity : BaseActivity(), ArtistsView, Injector by Inject.i
 
     val adapter = ArtistNameAdapter()
     val presenter = ArtistsPresenter(this, bus, artistsInteractorProvider, interactorExecutor, ArtistNameMapper())
-    val recycler : RecyclerView by bindView(R.id.artistsRecyclerView)
+    val recycler : RecyclerView by bindView(R.id.artists_recycler_view)
 
     override fun init() {
         setSupportActionBar(toolbar)
+        adapter.onItemClickListener = { presenter.onArtistClicked(it) }
         val layoutManager = LinearLayoutManager(this)
         recycler.setLayoutManager(layoutManager)
         recycler.setAdapter(adapter)

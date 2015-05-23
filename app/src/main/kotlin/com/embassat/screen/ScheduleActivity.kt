@@ -11,25 +11,24 @@ import android.view.ViewGroup
 import android.widget.RelativeLayout
 import android.widget.TextView
 import com.embassat.R
+import com.embassat.base.BaseActivity
+import com.embassat.extension.bindView
 import com.embassat.screen.ScheduleListFragment
 
 /**
  * Created by Quique on 16/5/15.
  */
 
-public class ScheduleActivity : AppCompatActivity() {
+public class ScheduleActivity : BaseActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_schedule)
-        setUpSchedule()
-    }
+    override val layoutResource: Int = R.layout.activity_schedule
 
-    private fun setUpSchedule() {
+    val viewPager : ViewPager by bindView(R.id.schedule_view_pager)
+
+    override fun init() {
         activeTabView(0)
-        val viewPager = findViewById(R.id.schedule_list_view_pager) as ViewPager
         viewPager.setOffscreenPageLimit(2)
-        viewPager.setAdapter(ScheduleListFragmentAdapter(getSupportFragmentManager()))
+        viewPager.setAdapter(ScheduleFragmentAdapter(getSupportFragmentManager()))
         viewPager.setOnPageChangeListener(object : ViewPager.SimpleOnPageChangeListener() {
             override fun onPageSelected(position: Int) {
                 activeTabView(position)
@@ -39,11 +38,7 @@ public class ScheduleActivity : AppCompatActivity() {
         for (i in 0..tabBarView.getChildCount() - 2 - 1) {
             val tabView = tabBarView.getChildAt(i * 2) as RelativeLayout
             val finalI = i
-            tabView.setOnClickListener(object : View.OnClickListener {
-                override fun onClick(v: View) {
-                    viewPager.setCurrentItem(finalI)
-                }
-            })
+            tabView.setOnClickListener { viewPager.setCurrentItem(finalI) }
         }
     }
 
@@ -57,7 +52,7 @@ public class ScheduleActivity : AppCompatActivity() {
         }
     }
 
-    inner class ScheduleListFragmentAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
+    inner class ScheduleFragmentAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
 
         override fun getCount(): Int {
             return 3
