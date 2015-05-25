@@ -11,6 +11,7 @@ import android.view.ViewGroup
 import android.widget.RelativeLayout
 import android.widget.TextView
 import com.embassat.R
+import com.embassat.adapter.ScheduleFragmentAdapter
 import com.embassat.base.BaseActivity
 import com.embassat.extension.bindView
 import com.embassat.screen.ScheduleListFragment
@@ -49,23 +50,6 @@ public class ScheduleActivity : BaseActivity() {
             tabView.setBackgroundColor(if (i == position) getResources().getColor(android.R.color.black) else getResources().getColor(android.R.color.white))
             val tabTextView = tabView.getChildAt(0) as TextView
             tabTextView.setTextColor(if (i == position) getResources().getColor(android.R.color.white) else getResources().getColor(android.R.color.black))
-        }
-    }
-
-    inner class ScheduleFragmentAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
-
-        override fun getCount(): Int {
-            return 3
-        }
-
-        override fun getItem(position: Int): Fragment {
-            val fragment = ScheduleListFragment()
-
-            val args = Bundle()
-            args.putInt("extra_position", position)
-            fragment.setArguments(args)
-
-            return fragment
         }
     }
 }

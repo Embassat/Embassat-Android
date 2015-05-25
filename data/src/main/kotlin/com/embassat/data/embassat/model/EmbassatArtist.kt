@@ -9,4 +9,6 @@ data class EmbassatArtist (
         val ID: Long,
         val title: String,
         val date: String,
-        val featured_image: EmbassatArtistFeaturedImage)
+        val content: String,
+        val featured_image: EmbassatArtistFeaturedImage,
+        val terms: EmbassatArtistTerms)

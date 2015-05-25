@@ -17,6 +17,9 @@ class ArtistMapper {
             artist.ID,
             artist.title,
             artist.date,
-            artist.featured_image.guid)
+            artist.featured_image.guid,
+            artist.date,
+            artist.terms.category.name,
+            artist.content)
 
 }
