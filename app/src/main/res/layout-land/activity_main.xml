@@ -11,7 +11,7 @@
         android:orientation="vertical">
         <com.embassat.view.NoeDisplayTextView
             android:id="@+id/main_option_info"
-            android:textColor="@drawable/main_text_color"
+            android:textColor="@drawable/selectable_text_color"
             style="@style/MainMenuOptionText"
             android:text="@string/main_option_info"/>
         <com.embassat.view.NoeDisplayTextView
@@ -33,7 +33,7 @@
         android:orientation="vertical">
         <com.embassat.view.NoeDisplayTextView
             android:id="@+id/main_option_map"
-            android:textColor="@drawable/main_text_color"
+            android:textColor="@drawable/selectable_text_color"
             style="@style/MainMenuOptionText"
             android:text="@string/main_option_map"/>
         <com.embassat.view.NoeDisplayTextView

@@ -45,3 +45,7 @@ private class ArtistNameViewHolder(view: View, var onItemClickListener: ((Artist
         title.setText(item.name)
     }
 }
+
+private class ArtistNameDecorator() : RecyclerView.ItemDecoration() {
+
+}

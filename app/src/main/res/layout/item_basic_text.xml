@@ -3,16 +3,16 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/white"
                 android:paddingTop="@dimen/activity_main_item_padding"
                 android:paddingBottom="@dimen/activity_main_item_padding">
 
-    <TextView
+    <com.embassat.view.ApercuTextView
             android:id="@+id/itemBasicTextTextView"
+            android:textAllCaps="true"
             android:layout_centerInParent="true"
             android:textStyle="bold"
             android:textSize="@dimen/activity_main_item_text_size"
-            android:textColor="@android:color/black"
+            android:textColor="@drawable/selectable_text_color"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 

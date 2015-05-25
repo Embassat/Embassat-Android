@@ -24,7 +24,8 @@
             android:theme="@style/EmbassatTheme.NoActionBar"
             android:parentActivityName=".screen.MainActivity"/>
         <activity android:name=".screen.ArtistsActivity"
-                  android:theme="@style/EmbassatTheme.NoActionBar" />
+            android:theme="@style/EmbassatTheme.NoActionBar"
+            android:parentActivityName=".screen.MainActivity" />
         <activity android:name=".screen.ScheduleActivity" />
         <activity android:name=".screen.TicketsActivity" />
         <activity android:name=".screen.ExtraActivity" />
