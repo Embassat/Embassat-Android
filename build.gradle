@@ -39,6 +39,7 @@ allprojects {
         libRxAndroid = "io.reactivex:rxandroid:0.24.0"
         libEventBus = "de.greenrobot:eventbus:2.4.0"
         libJobQueue = "com.path:android-priority-jobqueue:1.1.2"
+        libFirebase = "com.firebase:firebase-client-android:2.2.4+"
 
         libEspresso = "com.android.support.test.espresso:espresso-core:2.0"
         libTestingSupport = "com.android.support.test:testing-support-lib:0.1"

@@ -35,6 +35,7 @@ dependencies {
     compile parent.ext.libKotlin
     compile parent.ext.libEventBus
     compile parent.ext.libJobQueue
+    compile parent.ext.libFirebase
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 }
 buildscript {

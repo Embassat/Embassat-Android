@@ -93,17 +93,23 @@
     <orderEntry type="library" exported="" name="rxandroid-0.24.0" level="project" />
     <orderEntry type="library" exported="" name="kotlin-runtime-0.11.91.4" level="project" />
     <orderEntry type="library" exported="" name="android-priority-jobqueue-1.1.2" level="project" />
-    <orderEntry type="library" exported="" name="eventbus-2.4.0" level="project" />
     <orderEntry type="library" exported="" name="rxjava-1.0.4" level="project" />
+    <orderEntry type="library" exported="" name="eventbus-2.4.0" level="project" />
+    <orderEntry type="library" exported="" name="tubesock-0.0.11" level="project" />
     <orderEntry type="library" exported="" name="rxkotlin-0.22.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" exported="" name="jackson-annotations-2.2.2" level="project" />
     <orderEntry type="library" exported="" name="retrofit-1.9.0" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-22.1.1" level="project" />
-    <orderEntry type="library" exported="" name="gson-2.3.1" level="project" />
     <orderEntry type="library" exported="" name="appcompat-v7-22.1.1" level="project" />
+    <orderEntry type="library" exported="" name="gson-2.3.1" level="project" />
+    <orderEntry type="library" exported="" name="jackson-core-2.2.2" level="project" />
+    <orderEntry type="library" exported="" name="jackson-databind-2.2.2" level="project" />
+    <orderEntry type="library" exported="" name="firebase-client-android-2.2.4" level="project" />
+    <orderEntry type="library" exported="" name="firebase-client-jvm-2.2.4" level="project" />
     <orderEntry type="library" exported="" name="glide-3.5.2" level="project" />
     <orderEntry type="library" exported="" name="recyclerview-v7-22.1.1" level="project" />
-    <orderEntry type="library" exported="" name="kotlin-stdlib-0.11.91.4" level="project" />
     <orderEntry type="library" exported="" name="support-v4-22.1.1" level="project" />
+    <orderEntry type="library" exported="" name="kotlin-stdlib-0.11.91.4" level="project" />
     <orderEntry type="module" module-name="data" exported="" />
     <orderEntry type="module" module-name="repository" exported="" />
     <orderEntry type="module" module-name="domain" exported="" />

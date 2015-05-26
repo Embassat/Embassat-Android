@@ -22,5 +22,5 @@ class RepositoryModuleImpl(appModule: AppModule, dataModule: DataModule) :
         RepositoryModule,
         LanguageSingleton by appModule, EmbassatServiceSingleton by dataModule {
 
-    override val artistRepository = ArtistRepositoryImp(listOf(CloudArtistDataSet(language, embassatService)))
+    override val artistRepository = ArtistRepositoryImp(listOf(CloudArtistDataSet(language, embassatService, firebaseReference)))
 }

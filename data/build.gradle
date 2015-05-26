@@ -10,4 +10,5 @@ dependencies {
 
     compile parent.ext.libKotlin
     compile parent.ext.libRetrofit
+    compile parent.ext.libFirebase
 }
