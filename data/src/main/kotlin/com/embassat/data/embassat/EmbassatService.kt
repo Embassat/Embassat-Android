@@ -9,7 +9,7 @@ import retrofit.http.Path
  * Created by Quique on 14/04/15.
  */
 trait EmbassatService {
-    GET("/posts?type=portfolio")
+    GET("/artists.json")
     fun getArtists(): List<EmbassatArtist>
 
     GET("posts/{id}")

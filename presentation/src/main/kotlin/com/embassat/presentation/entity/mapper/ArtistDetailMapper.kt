@@ -9,6 +9,6 @@ import com.embassat.presentation.entity.ArtistDetail
 class ArtistDetailMapper() {
 
     fun transformArtists(artists: List<Artist>): List<ArtistDetail> {
-        return artists.map { ArtistDetail(it.id, it.name, it.description, it.date, it.time, it.scenario) }
+        return artists.map { ArtistDetail(it.id, it.name, it.description, it.start_date, it.end_date, it.scenario) }
     }
 }

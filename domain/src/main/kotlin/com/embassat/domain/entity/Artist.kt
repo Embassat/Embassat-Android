@@ -5,8 +5,9 @@ package com.embassat.domain.entity
  */
 data class Artist (val id: Long,
                    val name: String,
-                   val date: String,
+                   val start_date: String,
                    val imageURL: String,
-                   val time: String,
+                   val end_date: String,
                    val scenario: String,
-                   val description: String)
+                   val description: String,
+                   val shareURL: String)

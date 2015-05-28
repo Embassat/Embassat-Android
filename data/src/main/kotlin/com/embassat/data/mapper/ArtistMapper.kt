@@ -14,12 +14,13 @@ class ArtistMapper {
     }
 
     fun transform(artist: EmbassatArtist): Artist = Artist(
-            artist.ID,
-            artist.title,
-            artist.date,
-            artist.featured_image.guid,
-            artist.date,
-            artist.terms.category.name,
-            artist.content)
+            artist.id,
+            artist.name,
+            artist.start_date,
+            artist.image_url,
+            artist.end_date,
+            artist.stage,
+            artist.description,
+            artist.share_url)
 
 }

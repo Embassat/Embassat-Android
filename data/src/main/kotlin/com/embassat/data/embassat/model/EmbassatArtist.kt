@@ -1,14 +1,14 @@
 package com.embassat.data.embassat.model
 
-import com.embassat.data.embassat.model.EmbassatArtistFeaturedImage
-
 /**
  * Created by Quique on 14/04/15.
  */
 data class EmbassatArtist (
-        val ID: Long,
-        val title: String,
-        val date: String,
-        val content: String,
-        val featured_image: EmbassatArtistFeaturedImage,
-        val terms: EmbassatArtistTerms)
+        val id: Long,
+        val name: String,
+        val description: String,
+        val image_url: String,
+        val share_url: String,
+        val stage: String,
+        val start_date: String,
+        val end_date: String)
