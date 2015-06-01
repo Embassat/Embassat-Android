@@ -25,11 +25,14 @@ public class ArtistsPagerActivity : BaseActivity(), ArtistsPagerView, Injector b
 
     val adapter = ArtistsPagerFragmentAdapter(getSupportFragmentManager())
     val presenter = ArtistsPagerPresenter(this, bus, artistsInteractorProvider, interactorExecutor, ArtistDetailMapper())
+    var id : Long = 0
+    var currentPosition = 0
 
     override fun init() {
         setSupportActionBar(toolbar)
         getSupportActionBar().setDisplayShowTitleEnabled(false)
         getSupportActionBar().setDisplayHomeAsUpEnabled(true)
+        id = getIntent().getExtras().getLong("ID")
         toolbarTitle.setText(R.string.title_activity_artists)
         viewPager.setOffscreenPageLimit(2)
         viewPager.setAdapter(adapter)
@@ -47,5 +50,7 @@ public class ArtistsPagerActivity : BaseActivity(), ArtistsPagerView, Injector b
 
     override fun showArtists(artists: List<ArtistDetail>) {
         adapter.items = artists
+        currentPosition = adapter.getItemPositionById(id)
+        viewPager.setCurrentItem(currentPosition)
     }
 }

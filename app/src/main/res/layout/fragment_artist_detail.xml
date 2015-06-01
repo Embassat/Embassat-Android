@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/artist_detail_fragment_image"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+        <com.embassat.view.ApercuTextView
+            tools:text="Dissabte"
+            android:id="@+id/artist_detail_fragment_day"
+            android:textColor="@color/primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.embassat.view.ApercuTextView
+            tools:text="22:00"
+            android:layout_gravity="center"
+            android:id="@+id/artist_detail_fragment_hour"
+            android:textColor="@color/primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.embassat.view.ApercuTextView
+            tools:text="Principal"
+            android:layout_gravity="right"
+            android:id="@+id/artist_detail_fragment_stage"
+            android:textColor="@color/primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.embassat.view.ApercuTextView
+            tools:text="Octa Octa"
+            android:id="@+id/artist_detail_fragment_name"
+            android:textSize="20sp"
+            android:textColor="@color/primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.embassat.view.ApercuTextView
+            tools:text="Principal"
+            android:layout_marginTop="30dp"
+            android:id="@+id/artist_detail_fragment_description"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
+    </ScrollView>

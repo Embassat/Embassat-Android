@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentStatePagerAdapter
 import com.embassat.presentation.entity.ArtistDetail
 import com.embassat.presentation.entity.ArtistName
+import com.embassat.screen.ArtistDetailFragment
 import com.embassat.screen.ScheduleListFragment
 
 /**
@@ -23,12 +24,19 @@ class ArtistsPagerFragmentAdapter(fm: FragmentManager) : FragmentStatePagerAdapt
     override fun getCount() = items?.size() ?: 0
 
     override fun getItem(position: Int): Fragment {
-        val fragment = ScheduleListFragment()
+        val fragment = ArtistDetailFragment()
 
         val args = Bundle()
-        args.putInt("extra_position", position)
+        args.putSerializable("artist", items?.get(position))
         fragment.setArguments(args)
 
         return fragment
+    }
+
+    fun getItemPositionById(id: Long) : Int {
+        for (i in items!!.indices) {
+            items!!.get(i).id == id ?: return i
+        }
+        return 0
     }
 }

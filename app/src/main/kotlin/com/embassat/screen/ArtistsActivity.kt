@@ -8,6 +8,7 @@ import com.embassat.module.Inject
 import com.embassat.module.Injector
 import com.embassat.extension.bindView
 import com.embassat.base.BaseActivity
+import com.embassat.extension.navigate
 import com.embassat.presentation.entity.ArtistName
 import com.embassat.presentation.entity.mapper.ArtistNameMapper
 import com.embassat.presentation.presenter.ArtistsPresenter
@@ -29,7 +30,7 @@ public class ArtistsActivity : BaseActivity(), ArtistsView, Injector by Inject.i
         setSupportActionBar(toolbar)
         getSupportActionBar().setDisplayShowTitleEnabled(false)
         getSupportActionBar().setDisplayHomeAsUpEnabled(true)
-        toolbarTitle.setText(R.string.title_activity_artistsx)
+        toolbarTitle.setText(R.string.title_activity_artists)
         adapter.onItemClickListener = { presenter.onArtistClicked(it) }
         val layoutManager = LinearLayoutManager(this)
         recycler.setLayoutManager(layoutManager)
@@ -51,6 +52,6 @@ public class ArtistsActivity : BaseActivity(), ArtistsView, Injector by Inject.i
     }
 
     override fun navigateToDetail(id: Long) {
-        //TODO go to
+        navigate<ArtistsPagerActivity>(id)
     }
 }

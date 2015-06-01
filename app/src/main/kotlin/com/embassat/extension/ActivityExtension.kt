@@ -19,6 +19,12 @@ inline public fun <reified T : Activity> Activity.navigate() {
     ActivityCompat.startActivity(this, intent, null)
 }
 
+inline public fun <reified T : Activity> Activity.navigate(id: Long) {
+    val intent = Intent(this, javaClass<T>())
+    intent.putExtra("ID", id)
+    ActivityCompat.startActivity(this, intent, null)
+}
+
 public fun Activity.openWeb(url: String) {
     val intent = Intent(Intent.ACTION_VIEW)
     intent.setData(Uri.parse(url))
