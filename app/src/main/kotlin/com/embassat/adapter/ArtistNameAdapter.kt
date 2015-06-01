@@ -31,6 +31,8 @@ class ArtistNameAdapter() : RecyclerView.Adapter<ArtistNameViewHolder>() {
 
     override fun onBindViewHolder(holder: ArtistNameViewHolder?, position: Int) {
         holder?.setItem(items!![position])
+        if (position == 0) holder?.setSeparatorVisibility(View.INVISIBLE)
+        else holder?.setSeparatorVisibility(View.VISIBLE)
     }
 
     override fun getItemCount() = items?.size() ?: 0
@@ -39,9 +41,14 @@ class ArtistNameAdapter() : RecyclerView.Adapter<ArtistNameViewHolder>() {
 private class ArtistNameViewHolder(view: View, var onItemClickListener: ((ArtistName) -> Unit)?) : RecyclerView.ViewHolder(view) {
 
     private val title: TextView by bindView(R.id.itemBasicTextTextView)
+    private val separator: View by bindView(R.id.itemBasicTextSeparator)
 
     fun setItem(item: ArtistName) {
         itemView?.setOnClickListener { onItemClickListener?.invoke(item) }
         title.setText(item.name)
+    }
+
+    fun setSeparatorVisibility(visibility: Int) {
+        separator.setVisibility(visibility)
     }
 }

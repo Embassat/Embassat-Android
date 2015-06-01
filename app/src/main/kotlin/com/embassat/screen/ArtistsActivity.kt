@@ -27,6 +27,9 @@ public class ArtistsActivity : BaseActivity(), ArtistsView, Injector by Inject.i
 
     override fun init() {
         setSupportActionBar(toolbar)
+        getSupportActionBar().setDisplayShowTitleEnabled(false)
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true)
+        toolbarTitle.setText(R.string.title_activity_artistsx)
         adapter.onItemClickListener = { presenter.onArtistClicked(it) }
         val layoutManager = LinearLayoutManager(this)
         recycler.setLayoutManager(layoutManager)
