@@ -21,9 +21,7 @@ public class MainActivity : BaseActivity() {
         optionInfo.setOnClickListener { navigate<InfoActivity>() }
         optionArtists.setOnClickListener { navigate<ArtistsActivity>() }
         optionSchedule.setOnClickListener { navigate<ScheduleActivity>() }
-        optionMap.setOnClickListener {
-            //TODO map activity
-        }
+        optionMap.setOnClickListener { navigate<MapActivity>() }
         mapTickets.setOnClickListener { navigate<TicketsActivity>() }
         mapExtra.setOnClickListener { navigate<ExtraActivity>() }
     }

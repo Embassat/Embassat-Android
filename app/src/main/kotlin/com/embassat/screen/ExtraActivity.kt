@@ -14,6 +14,9 @@ public class ExtraActivity : BaseActivity() {
     override val layoutResource: Int = R.layout.activity_extres
 
     override fun init() {
-
+        setSupportActionBar(toolbar)
+        getSupportActionBar().setDisplayShowTitleEnabled(false)
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true)
+        toolbarTitle.setText(R.string.title_activity_extres)
     }
 }

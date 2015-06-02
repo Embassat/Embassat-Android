@@ -26,6 +26,7 @@ public class TicketsActivity : BaseActivity() {
         toolbarTitle.setText(R.string.title_activity_tickets)
         findViewById(R.id.compra_abonament_button).setOnClickListener{openWeb(ticketeaUrl)}
         findViewById(R.id.compra_entrada_dia_button).setOnClickListener{openWeb(ticketeaUrl)}
+        findViewById(R.id.compra_entrada_petit_em_button).setOnClickListener{openWeb(ticketeaUrl)}
         (findViewById(R.id.activity_tickets_warning_text_view) as TextView).setText(Html.fromHtml("<font color=#f05158>*</font> <font color=#ffffff>Aforament limitat</font>"))
     }
 }

@@ -4,6 +4,16 @@
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <!-- The following two permissions are not required to use
+         Google Maps Android API v2, but are recommended. -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
 
     <application
         android:name=".App"
@@ -11,6 +21,12 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/EmbassatTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDKhU1zVSUh2Ko1M3cqu7QLyx12rOaQCtM"/>
         <activity
             android:name=".screen.MainActivity"
             android:theme="@style/EmbassatTheme.NoActionBar">
@@ -30,12 +46,17 @@
             android:theme="@style/EmbassatTheme.NoActionBar"
             android:parentActivityName=".screen.ArtistsActivity" />
         <activity android:name=".screen.ScheduleActivity"
-              android:theme="@style/EmbassatTheme.NoActionBar"
-              android:parentActivityName=".screen.MainActivity" />
+            android:theme="@style/EmbassatTheme.NoActionBar"
+            android:parentActivityName=".screen.MainActivity" />
+        <activity android:name=".screen.MapActivity"
+            android:theme="@style/EmbassatTheme.NoActionBar"
+            android:parentActivityName=".screen.MainActivity" />
         <activity android:name=".screen.TicketsActivity"
               android:theme="@style/EmbassatTheme.NoActionBar"
               android:parentActivityName=".screen.MainActivity" />
-        <activity android:name=".screen.ExtraActivity" />
+        <activity android:name=".screen.ExtraActivity"
+            android:theme="@style/EmbassatTheme.NoActionBar"
+            android:parentActivityName=".screen.MainActivity" />
     </application>
 
 </manifest>

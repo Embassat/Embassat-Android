@@ -24,9 +24,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"/>
 
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:paddingBottom="20dp">
+
                 <com.embassat.view.ApercuTextView
                     android:text="@string/info_first_section_title"
                     style="@style/InfoTitle" />
+            </FrameLayout>
 
                 <com.embassat.view.ApercuTextView
                     android:text="@string/info_first_section_content"
@@ -38,9 +45,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"/>
 
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:paddingBottom="20dp">
+
                 <com.embassat.view.ApercuTextView
                     android:text="@string/info_second_section_title"
                     style="@style/InfoTitle" />
+
+            </FrameLayout>
 
                 <com.embassat.view.ApercuTextView
                     android:text="@string/info_second_section_content"
@@ -52,9 +67,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"/>
 
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:paddingBottom="20dp">
+
                 <com.embassat.view.ApercuTextView
                     android:text="@string/info_third_section_title"
                     style="@style/InfoTitle" />
+
+            </FrameLayout>
 
                 <com.embassat.view.ApercuTextView
                     android:text="@string/info_third_section_content"
@@ -66,9 +89,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"/>
 
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:paddingBottom="20dp">
+
                 <com.embassat.view.ApercuTextView
                     android:text="@string/info_fourth_section_title"
                     style="@style/InfoTitle" />
+
+            </FrameLayout>
 
                 <com.embassat.view.ApercuTextView
                     android:text="@string/info_fourth_section_content"

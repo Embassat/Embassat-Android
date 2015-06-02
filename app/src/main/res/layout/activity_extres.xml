@@ -1,324 +1,179 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:ignore="MergeRootFrame">
+    android:layout_height="match_parent">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <include layout="@layout/toolbar" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
+        android:layout_height="match_parent"
+        tools:ignore="MergeRootFrame">
         <LinearLayout
-            android:orientation="horizontal"
-            android:weightSum="4"
-            android:layout_width="match_parent"
-            android:background="@android:color/white"
-            android:layout_height="?android:attr/actionBarSize">
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="2">
-                <TextView
-                    android:text="@string/extres_item_title_1"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:layout_centerInParent="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-            </RelativeLayout>
-            <View
-                android:layout_width="@dimen/activity_main_item_separator_height"
-                android:background="@android:color/black"
-                android:layout_height="match_parent"/>
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-                <TextView
-                    android:text="@string/horaris_tab0"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:layout_centerInParent="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-            </RelativeLayout>
-            <View
-                android:layout_width="@dimen/activity_main_item_separator_height"
-                android:background="@android:color/black"
-                android:layout_height="match_parent"/>
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-                <TextView
-                    android:text="@string/extres_time_1"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:layout_centerInParent="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-            </RelativeLayout>
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:background="@android:color/black"
-            android:layout_height="@dimen/activity_main_item_separator_height"/>
-
-        <LinearLayout
-            android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <TextView
-                android:text="@string/extres_text_1_a"
-                android:textSize="18sp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+        <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+        <com.embassat.view.ApercuTextView
+            tools:text="Dissabte"
+            android:text="@string/extres_item_title_1"
+            android:id="@+id/artist_detail_fragment_day"
+            android:textColor="@color/primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.embassat.view.ApercuTextView
+            tools:text="22:00"
+            android:text="@string/extres_item_time_1"
+            android:layout_gravity="center"
+            android:id="@+id/artist_detail_fragment_hour"
+            android:textColor="@color/primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.embassat.view.ApercuTextView
+            tools:text="Principal"
+            android:text="@string/extres_item_place_1"
+            android:layout_gravity="right"
+            android:id="@+id/artist_detail_fragment_stage"
+            android:textColor="@color/primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
 
-            <TextView
-                android:text="@string/extres_text_1_b"
-                android:textSize="18sp"
+            <LinearLayout
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="wrap_content">
 
-            <TextView
-                android:layout_marginTop="20dp"
-                android:text="@string/extres_text_1_c"
-                android:textSize="18sp"
+                <TextView
+                    android:text="@string/extres_item_day_1"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:text="@string/extres_text_1_a"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:text="@string/extres_text_1_b"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:text="@string/extres_text_1_c"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+        <com.embassat.view.ApercuTextView
+            tools:text="Dissabte"
+            android:text="@string/extres_item_title_2"
+            android:id="@+id/artist_detail_fragment_day"
+            android:textColor="@color/primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.embassat.view.ApercuTextView
+            tools:text="22:00"
+            android:text="@string/extres_item_time_2"
+            android:layout_gravity="center"
+            android:id="@+id/artist_detail_fragment_hour"
+            android:textColor="@color/primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.embassat.view.ApercuTextView
+            tools:text="Principal"
+            android:text="@string/extres_item_place_2"
+            android:layout_gravity="right"
+            android:id="@+id/artist_detail_fragment_stage"
+            android:textColor="@color/primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="@string/extres_text_2_a"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:text="@string/extres_text_2_b"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:text="@string/extres_text_2_c"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:text="@string/extres_text_2_d"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:text="@string/extres_text_2_e"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
 
         </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:background="@android:color/black"
-            android:layout_height="@dimen/activity_main_item_separator_height"/>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:weightSum="4"
-            android:layout_width="match_parent"
-            android:background="@android:color/white"
-            android:layout_height="?android:attr/actionBarSize">
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="2">
-                <TextView
-                    android:text="@string/extres_item_title_2"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:layout_centerInParent="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-            </RelativeLayout>
-            <View
-                android:layout_width="@dimen/activity_main_item_separator_height"
-                android:background="@android:color/black"
-                android:layout_height="match_parent"/>
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-                <TextView
-                    android:text="@string/horaris_tab3"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:layout_centerInParent="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-            </RelativeLayout>
-            <View
-                android:layout_width="@dimen/activity_main_item_separator_height"
-                android:background="@android:color/black"
-                android:layout_height="match_parent"/>
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-                <TextView
-                    android:text="@string/extres_time_2"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:layout_centerInParent="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-            </RelativeLayout>
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:background="@android:color/black"
-            android:layout_height="@dimen/activity_main_item_separator_height"/>
-
-        <LinearLayout
-            android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:text="@string/extres_text_2_a"
-                android:textSize="18sp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
-
-            <TextView
-                android:layout_marginTop="20dp"
-                android:text="@string/extres_text_2_b"
-                android:textSize="18sp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
-
-            <TextView
-                android:layout_marginTop="20dp"
-                android:text="@string/extres_text_2_c"
-                android:textSize="18sp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
-
-            <TextView
-                android:text="@string/extres_text_2_d"
-                android:textSize="18sp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
-
-            <TextView
-                android:text="@string/extres_text_2_e"
-                android:textSize="18sp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
-
-            <TextView
-                android:text="@string/extres_text_2_f"
-                android:textSize="18sp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
-
-            <TextView
-                android:text="@string/extres_text_2_g"
-                android:textSize="18sp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
-
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:background="@android:color/black"
-            android:layout_height="@dimen/activity_main_item_separator_height"/>
-
-        <LinearLayout
-            android:id="@+id/days_header_tabbar"
-            android:orientation="horizontal"
-            android:weightSum="4"
-            android:layout_width="match_parent"
-            android:background="@android:color/white"
-            android:layout_height="?android:attr/actionBarSize">
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="2">
-                <TextView
-                    android:text="@string/extres_item_title_3"
-                    android:id="@+id/day_tab"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:layout_centerInParent="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-            </RelativeLayout>
-            <View
-                android:layout_width="@dimen/activity_main_item_separator_height"
-                android:background="@android:color/black"
-                android:layout_height="match_parent"/>
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-                <TextView
-                    android:text="@string/horaris_tab3"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:layout_centerInParent="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-            </RelativeLayout>
-            <View
-                android:layout_width="@dimen/activity_main_item_separator_height"
-                android:background="@android:color/black"
-                android:layout_height="match_parent"/>
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-                <TextView
-                    android:text="@string/extres_time_3"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:layout_centerInParent="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-            </RelativeLayout>
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:background="@android:color/black"
-            android:layout_height="@dimen/activity_main_item_separator_height"/>
-
-        <LinearLayout
-            android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:text="@string/extres_text_3_a"
-                android:textSize="18sp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
-
-            <TextView
-                android:layout_marginTop="20dp"
-                android:text="@string/extres_text_3_b"
-                android:textSize="18sp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
-
-            <TextView
-                android:text="@string/extres_text_3_c"
-                android:textSize="18sp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
-
-            <TextView
-                android:layout_marginTop="20dp"
-                android:text="@string/extres_text_3_d"
-                android:textSize="18sp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
-
-            <TextView
-                android:text="@string/extres_text_3_e"
-                android:textSize="18sp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
-
-        </LinearLayout>
-    </LinearLayout>
-</ScrollView>
+    </ScrollView>
+</LinearLayout>

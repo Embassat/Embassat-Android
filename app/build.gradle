@@ -28,6 +28,7 @@ dependencies {
     compile project (":presentation")
     compile parent.ext.libAppCompat
     compile parent.ext.libRecyclerView
+    compile parent.ext.libPlayServices
     compile parent.ext.libKotlin
     compile parent.ext.libRetrofit
     compile parent.ext.libRxAndroid
