@@ -9,8 +9,16 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import com.embassat.R
+import com.embassat.adapter.ScheduleListAdapter
+import com.embassat.extension.bindView
 import com.embassat.model.Artist
 import com.embassat.model.EmbassatModel
+import com.embassat.module.Inject
+import com.embassat.module.Injector
+import com.embassat.presentation.entity.ArtistSchedule
+import com.embassat.presentation.entity.mapper.ArtistScheduleMapper
+import com.embassat.presentation.presenter.ArtistsSchedulePresenter
+import com.embassat.presentation.view.ArtistsScheduleView
 import rx.Observable
 import java.util.ArrayList
 
@@ -18,54 +26,41 @@ import java.util.ArrayList
  * Created by Quique on 16/5/15.
  */
 
-public class ScheduleListFragment : Fragment() {
+public class ScheduleListFragment : Fragment(), ArtistsScheduleView, Injector by Inject.instance {
 
-    private val EXTRA_ARTISTS = "extra_artists"
+    private val EXTRA_POSITION = "extra_position"
 
-    var artistsRecyclerView: RecyclerView? = null
-    val mainMenuAdapter: ScheduleListAdapter = ScheduleListAdapter()
+    val artistsRecyclerView : RecyclerView by bindView(R.id.scheduleListRecyclerView)
+    val adapter: ScheduleListAdapter = ScheduleListAdapter()
+    var presenter : ArtistsSchedulePresenter? = null
+    var position : Int = 0;
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        artistsRecyclerView = getView().findViewById(R.id.scheduleListRecyclerView) as RecyclerView
-        val layoutManager = LinearLayoutManager(getActivity())
-        artistsRecyclerView?.setLayoutManager(layoutManager)
-        artistsRecyclerView?.setAdapter(mainMenuAdapter)
-        mainMenuAdapter.items = getArguments().getSerializable(EXTRA_ARTISTS) as List<Artist>
+        super<Fragment>.onCreate(savedInstanceState)
+        position = getArguments().getInt(EXTRA_POSITION)
+        presenter = ArtistsSchedulePresenter(this, bus, artistsInteractorProvider, interactorExecutor, ArtistScheduleMapper(position))
     }
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater?.inflate(R.layout.fragment_schedule_list, container, false)
     }
 
-    inner class ScheduleListAdapter() : RecyclerView.Adapter<ScheduleListAdapter.MainMenuItemViewHolder>() {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        artistsRecyclerView.setLayoutManager(LinearLayoutManager(getActivity()))
+        artistsRecyclerView.setAdapter(adapter)
+    }
 
-        var items: List<Artist>? = null
-            set(value) {
-                $items = value
-                notifyDataSetChanged()
-            }
+    override fun onResume() {
+        super<Fragment>.onResume()
+        presenter?.onResume()
+    }
 
-        override fun getItemCount(): Int {
-            return items?.size() ?: 0
-        }
+    override fun onPause() {
+        super<Fragment>.onPause()
+        presenter?.onPause()
+    }
 
-        override fun onBindViewHolder(viewHolder: MainMenuItemViewHolder, position: Int) {
-            val item = items?.get(position)
-            viewHolder.itemScheduleArtistNameTextView.setText(item?.title)
-        }
-
-        override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): MainMenuItemViewHolder? {
-            val view = LayoutInflater.from(parent?.getContext()).inflate(R.layout.item_schedule, parent, false)
-            return MainMenuItemViewHolder(view);
-        }
-
-        inner class MainMenuItemViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-            val itemScheduleHoraIniciTextView = view.findViewById(R.id.hora_inici_text_view) as TextView
-            val itemScheduleHoraFinalTextView = view.findViewById(R.id.hora_final_text_view) as TextView
-            val itemScheduleArtistNameTextView = view.findViewById(R.id.artist_name_text_view) as TextView
-            val itemScheduleEscenariTextView = view.findViewById(R.id.escenari_text_view) as TextView
-        }
-
+    override fun showArtists(artists: List<ArtistSchedule>) {
+        adapter.items = artists
     }
 }

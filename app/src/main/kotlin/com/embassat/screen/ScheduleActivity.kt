@@ -18,11 +18,7 @@ import com.embassat.presentation.view.ArtistsScheduleView
  * Created by Quique on 16/5/15.
  */
 
-public class ScheduleActivity : BaseActivity(), ArtistsScheduleView, Injector by Inject.instance {
-
-    override fun showArtists(artists: List<ArtistSchedule>) {
-        adapter.artists = artists
-    }
+public class ScheduleActivity : BaseActivity() {
 
     override val layoutResource: Int = R.layout.activity_schedule
 
@@ -30,6 +26,10 @@ public class ScheduleActivity : BaseActivity(), ArtistsScheduleView, Injector by
     val adapter = ScheduleFragmentAdapter(getSupportFragmentManager())
 
     override fun init() {
+        setSupportActionBar(toolbar)
+        getSupportActionBar().setDisplayShowTitleEnabled(false)
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true)
+        toolbarTitle.setText(R.string.title_activity_horaris)
         activeTabView(0)
         viewPager.setOffscreenPageLimit(2)
         viewPager.setOnPageChangeListener(object : ViewPager.SimpleOnPageChangeListener() {
@@ -37,9 +37,10 @@ public class ScheduleActivity : BaseActivity(), ArtistsScheduleView, Injector by
                 activeTabView(position)
             }
         })
+        viewPager.setAdapter(adapter)
         val tabBarView = findViewById(R.id.days_header_tabbar) as ViewGroup
-        for (i in 0..tabBarView.getChildCount() - 2 - 1) {
-            val tabView = tabBarView.getChildAt(i * 2) as RelativeLayout
+        for (i in 0..tabBarView.getChildCount()-1) {
+            val tabView = tabBarView.getChildAt(i) as RelativeLayout
             val finalI = i
             tabView.setOnClickListener { viewPager.setCurrentItem(finalI) }
         }
@@ -47,11 +48,11 @@ public class ScheduleActivity : BaseActivity(), ArtistsScheduleView, Injector by
 
     private fun activeTabView(position: Int) {
         val tabBarView = findViewById(R.id.days_header_tabbar) as ViewGroup
-        for (i in 0..tabBarView.getChildCount() - 2 - 1) {
-            val tabView = tabBarView.getChildAt(i * 2) as RelativeLayout
-            tabView.setBackgroundColor(if (i == position) getResources().getColor(android.R.color.black) else getResources().getColor(android.R.color.white))
+        for (i in 0..tabBarView.getChildCount()-1) {
+            val tabView = tabBarView.getChildAt(i) as RelativeLayout
+            tabView.setBackgroundColor(if (i == position) getResources().getColor(R.color.tab_background_selected) else getResources().getColor(R.color.tab_background))
             val tabTextView = tabView.getChildAt(0) as TextView
-            tabTextView.setTextColor(if (i == position) getResources().getColor(android.R.color.white) else getResources().getColor(android.R.color.black))
+            tabTextView.setTextColor(if (i == position) getResources().getColor(android.R.color.white) else getResources().getColor(R.color.primary))
         }
     }
 }

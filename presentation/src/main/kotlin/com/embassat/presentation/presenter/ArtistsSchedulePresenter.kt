@@ -26,6 +26,6 @@ class ArtistsSchedulePresenter(
     }
 
     fun onEvent(event: ArtistsEvent) {
-        view.showArtists(mapper.transformArtists(event.artists))
+        view.showArtists(mapper.transformArtists(event.artists, mapper.position))
     }
 }

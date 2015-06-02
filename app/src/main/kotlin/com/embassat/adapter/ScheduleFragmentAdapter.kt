@@ -14,12 +14,6 @@ import java.util.ArrayList
 
 class ScheduleFragmentAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
 
-    var artists : List<ArtistSchedule> = ArrayList()
-        set(value) {
-            $artists = value
-            for (fr)
-        }
-
     override fun getCount(): Int {
         return 3
     }

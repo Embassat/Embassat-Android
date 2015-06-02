@@ -16,16 +16,16 @@
         android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="match_parent">
-        <TextView
+        <com.embassat.view.ApercuTextView
             android:id="@+id/hora_inici_text_view"
             android:textStyle="bold"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-        <TextView
+        <com.embassat.view.ApercuTextView
             android:id="@+id/hora_final_text_view"
             android:textStyle="bold"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
@@ -37,16 +37,16 @@
         android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="match_parent">
-        <TextView
+        <com.embassat.view.ApercuTextView
             android:id="@+id/artist_name_text_view"
             android:textStyle="bold"
             android:textAllCaps="true"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-        <TextView
+        <com.embassat.view.ApercuTextView
             android:id="@+id/escenari_text_view"
-            android:textColor="@android:color/black"
+            android:textColor="@color/primary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>

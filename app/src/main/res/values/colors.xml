@@ -10,4 +10,6 @@
     <color name="primary">#fff05158</color>
     <color name="primaryDark">#ffd25057</color>
     <color name="background">#ff000543</color>
+    <color name="tab_background">#fff9c5c2</color>
+    <color name="tab_background_selected">#fffc7f85</color>
 </resources>
