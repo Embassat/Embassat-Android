@@ -20,7 +20,11 @@ class ArtistDetailMapper() {
             val date = format.parse(it.start_date)
             val cal = GregorianCalendar()
             cal.setTime(date)
-            val hour = cal.get(Calendar.HOUR_OF_DAY).toString() + ":" + cal.get(Calendar.MINUTE)
+            var hour = cal.get(Calendar.HOUR_OF_DAY).toString()
+            if (cal.get(Calendar.HOUR_OF_DAY) < 10) hour = "0" + hour
+            var minute = cal.get(Calendar.MINUTE).toString()
+            if (cal.get(Calendar.MINUTE) < 10) minute = "0" + minute
+            val time = hour + ":" + minute
             val day = cal.get(Calendar.DAY_OF_WEEK)
             var dayString = ""
             when (day) {
@@ -29,7 +33,7 @@ class ArtistDetailMapper() {
                 6 -> dayString = "Divendres"
                 7 -> dayString = "Dissabte"
             }
-            ArtistDetail(it.id, it.name, it.description, dayString, hour, it.scenario, it.imageURL)
+            ArtistDetail(it.id, it.name, it.description, dayString, time, it.scenario, it.imageURL)
         })
     }
 }

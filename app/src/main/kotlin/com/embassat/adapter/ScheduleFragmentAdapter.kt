@@ -4,13 +4,21 @@ import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentStatePagerAdapter
+import com.embassat.presentation.entity.ArtistSchedule
 import com.embassat.screen.ScheduleListFragment
+import java.util.ArrayList
 
 /**
  * Created by Quique on 25/5/15.
  */
 
 class ScheduleFragmentAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
+
+    var artists : List<ArtistSchedule> = ArrayList()
+        set(value) {
+            $artists = value
+            for (fr)
+        }
 
     override fun getCount(): Int {
         return 3

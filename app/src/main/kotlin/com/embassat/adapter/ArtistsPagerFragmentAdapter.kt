@@ -35,7 +35,7 @@ class ArtistsPagerFragmentAdapter(fm: FragmentManager) : FragmentStatePagerAdapt
 
     fun getItemPositionById(id: Long) : Int {
         for (i in items!!.indices) {
-            items!!.get(i).id == id ?: return i
+            if (items!!.get(i).id == id) return i
         }
         return 0
     }

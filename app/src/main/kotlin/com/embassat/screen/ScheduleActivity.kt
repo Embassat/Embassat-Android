@@ -1,12 +1,6 @@
 package com.embassat.screen
 
-import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentManager
-import android.support.v4.app.FragmentStatePagerAdapter
 import android.support.v4.view.ViewPager
-import android.support.v7.app.AppCompatActivity
-import android.view.View
 import android.view.ViewGroup
 import android.widget.RelativeLayout
 import android.widget.TextView
@@ -14,22 +8,30 @@ import com.embassat.R
 import com.embassat.adapter.ScheduleFragmentAdapter
 import com.embassat.base.BaseActivity
 import com.embassat.extension.bindView
-import com.embassat.screen.ScheduleListFragment
+import com.embassat.module.Inject
+import com.embassat.module.Injector
+import com.embassat.presentation.entity.ArtistSchedule
+import com.embassat.presentation.view.ArtistsScheduleView
+
 
 /**
  * Created by Quique on 16/5/15.
  */
 
-public class ScheduleActivity : BaseActivity() {
+public class ScheduleActivity : BaseActivity(), ArtistsScheduleView, Injector by Inject.instance {
+
+    override fun showArtists(artists: List<ArtistSchedule>) {
+        adapter.artists = artists
+    }
 
     override val layoutResource: Int = R.layout.activity_schedule
 
     val viewPager : ViewPager by bindView(R.id.schedule_view_pager)
+    val adapter = ScheduleFragmentAdapter(getSupportFragmentManager())
 
     override fun init() {
         activeTabView(0)
         viewPager.setOffscreenPageLimit(2)
-        viewPager.setAdapter(ScheduleFragmentAdapter(getSupportFragmentManager()))
         viewPager.setOnPageChangeListener(object : ViewPager.SimpleOnPageChangeListener() {
             override fun onPageSelected(position: Int) {
                 activeTabView(position)

@@ -20,59 +20,39 @@ import java.util.ArrayList
 
 public class ScheduleListFragment : Fragment() {
 
-    private val EXTRA_POSITION = "extra_position"
-
-    private var position: Int = 0
+    private val EXTRA_ARTISTS = "extra_artists"
 
     var artistsRecyclerView: RecyclerView? = null
-    val artists: MutableList<Artist> = ArrayList()
-    val mainMenuAdapter: ScheduleListAdapter = ScheduleListAdapter(artists)
+    val mainMenuAdapter: ScheduleListAdapter = ScheduleListAdapter()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        position = getArguments().getInt(EXTRA_POSITION)
+        artistsRecyclerView = getView().findViewById(R.id.scheduleListRecyclerView) as RecyclerView
+        val layoutManager = LinearLayoutManager(getActivity())
+        artistsRecyclerView?.setLayoutManager(layoutManager)
+        artistsRecyclerView?.setAdapter(mainMenuAdapter)
+        mainMenuAdapter.items = getArguments().getSerializable(EXTRA_ARTISTS) as List<Artist>
     }
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater?.inflate(R.layout.fragment_schedule_list, container, false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        setUpScheduledArtists()
-    }
+    inner class ScheduleListAdapter() : RecyclerView.Adapter<ScheduleListAdapter.MainMenuItemViewHolder>() {
 
-    private fun setUpScheduledArtists() {
-        artistsRecyclerView = getView().findViewById(R.id.scheduleListRecyclerView) as RecyclerView
-        val layoutManager = LinearLayoutManager(getActivity())
-        artistsRecyclerView?.setLayoutManager(layoutManager)
-        artistsRecyclerView?.setAdapter(mainMenuAdapter)
-        val artistsObservable: Observable<List<Artist>> = EmbassatModel().getArtists()
-        artistsObservable.subscribe{result -> setDayArtists(result)}
-    }
-
-    private fun setDayArtists(newArtists: List<Artist>) {
-        for (artist in newArtists) {
-            when (position) {
-                0 -> if ("DIJ".equals(artist.date)) artists.add(artist)
-                1 -> if ("DIV".equals(artist.date)) artists.add(artist)
-                2 -> if ("DIS".equals(artist.date)) artists.add(artist)
+        var items: List<Artist>? = null
+            set(value) {
+                $items = value
+                notifyDataSetChanged()
             }
-        }
-        mainMenuAdapter.notifyDataSetChanged()
-    }
-
-    inner class ScheduleListAdapter(items: List<Artist>) : RecyclerView.Adapter<ScheduleListAdapter.MainMenuItemViewHolder>() {
-
-        val items: List<Artist> = items
 
         override fun getItemCount(): Int {
-            return items.size()
+            return items?.size() ?: 0
         }
 
         override fun onBindViewHolder(viewHolder: MainMenuItemViewHolder, position: Int) {
-            val item = items[position]
-            viewHolder.itemScheduleArtistNameTextView.setText(item.title)
+            val item = items?.get(position)
+            viewHolder.itemScheduleArtistNameTextView.setText(item?.title)
         }
 
         override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): MainMenuItemViewHolder? {
