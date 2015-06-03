@@ -8,6 +8,7 @@ import com.embassat.base.BaseActivity
 import com.embassat.extension.bindView
 import com.embassat.module.Inject
 import com.embassat.module.Injector
+import com.embassat.notification.NotificationScheduler
 import com.embassat.presentation.entity.ArtistDetail
 import com.embassat.presentation.entity.mapper.ArtistDetailMapper
 import com.embassat.presentation.presenter.ArtistsPagerPresenter
@@ -52,5 +53,11 @@ public class ArtistsPagerActivity : BaseActivity(), ArtistsPagerView, Injector b
         adapter.items = artists
         currentPosition = adapter.getItemPositionById(id)
         viewPager.setCurrentItem(currentPosition)
+    }
+
+    override fun addNotification(id: Long) {
+        val position = adapter.getItemPositionById(id)
+        if (position == -1) return
+        NotificationScheduler.add(id, adapter.items?.get(position)?.name, adapter.items?.get(position)?.stage, adapter.items?.get(position)?.real_start_date)
     }
 }

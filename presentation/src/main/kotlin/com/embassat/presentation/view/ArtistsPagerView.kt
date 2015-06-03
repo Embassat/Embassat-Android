@@ -8,4 +8,5 @@ import com.embassat.presentation.entity.ArtistDetail
 
 trait ArtistsPagerView : PresentationView {
     fun showArtists(artists: List<ArtistDetail>)
+    fun addNotification(id: Long)
 }
