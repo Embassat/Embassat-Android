@@ -31,7 +31,7 @@ class ScheduleListAdapter() : RecyclerView.Adapter<ScheduleListAdapter.MainMenuI
         viewHolder.itemScheduleHoraIniciTextView.setText(item?.start_time)
         viewHolder.itemScheduleHoraFinalTextView.setText(item?.end_time)
         viewHolder.itemScheduleEscenariTextView.setText(item?.stage)
-        viewHolder.itemScheduleStarTextView.setVisibility(NotificationScheduler.containsId(item?.id) ? View.VISIBLE : View.GONE)
+        //viewHolder.itemScheduleStarTextView.setVisibility(NotificationScheduler.containsId(item?.id) ? View.VISIBLE : View.GONE)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): MainMenuItemViewHolder? {
@@ -44,7 +44,7 @@ class ScheduleListAdapter() : RecyclerView.Adapter<ScheduleListAdapter.MainMenuI
         val itemScheduleHoraFinalTextView = view.findViewById(R.id.hora_final_text_view) as TextView
         val itemScheduleArtistNameTextView = view.findViewById(R.id.artist_name_text_view) as TextView
         val itemScheduleEscenariTextView = view.findViewById(R.id.escenari_text_view) as TextView
-        val itemScheduleStarTextView = view.findViewById(R.id.star_image_view)
+        //val itemScheduleStarTextView = view.findViewById(R.id.star_image_view)
     }
 
 }
