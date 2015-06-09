@@ -4,10 +4,13 @@ import android.app.AlarmManager
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.PorterDuff
 import android.os.SystemClock
 import android.support.v4.view.ViewPager
 import android.support.v7.widget.LinearLayoutManager
 import android.view.Menu
+import android.view.MenuInflater
 import android.view.MenuItem
 import com.embassat.R
 import com.embassat.adapter.ArtistsPagerFragmentAdapter
@@ -26,7 +29,7 @@ import com.embassat.service.ScheduleService
  * Created by Quique on 25/5/15.
  */
 
-public class ArtistsPagerActivity : BaseActivity(), ArtistsPagerView, Injector by Inject.instance {
+public class ArtistsPagerActivity : BaseActivity(), ArtistsPagerView, ViewPager.OnPageChangeListener, Injector by Inject.instance {
 
     override val layoutResource: Int = R.layout.activity_artists_pager
 
@@ -36,6 +39,7 @@ public class ArtistsPagerActivity : BaseActivity(), ArtistsPagerView, Injector b
     val presenter = ArtistsPagerPresenter(this, bus, artistsInteractorProvider, interactorExecutor, ArtistDetailMapper())
     var id : Long = 0
     var currentPosition = 0
+    var menuItem : MenuItem? = null
 
     override fun init() {
         setSupportActionBar(toolbar)
@@ -58,31 +62,57 @@ public class ArtistsPagerActivity : BaseActivity(), ArtistsPagerView, Injector b
     }
 
     override fun onCreateOptionsMenu(menu: Menu) : Boolean {
-        super<BaseActivity>.onCreateOptionsMenu(menu)
-        menu.add(R.menu.artist_detail)
+        super<BaseActivity>.onPrepareOptionsMenu(menu)
+        MenuInflater(this).inflate(R.menu.artist_detail, menu)
+
+        menuItem = menu.findItem(R.id.fav_option)
+
+        if (NotificationScheduler().existsNotification(this, id.toInt()))
+            menuItem?.getIcon()?.setColorFilter(getResources().getColor(android.R.color.white), PorterDuff.Mode.MULTIPLY)
+        else
+            menuItem?.getIcon()?.setColorFilter(getResources().getColor(R.color.background), PorterDuff.Mode.MULTIPLY)
+
         return true
     }
 
     override fun onOptionsItemSelected(item: MenuItem) : Boolean {
         when (item.getItemId()) {
-            R.id.fav_option ->
+            R.id.fav_option -> {
+                addNotification(id)
+                return true
+            }
         }
+        return super<BaseActivity>.onOptionsItemSelected(item)
     }
 
     override fun showArtists(artists: List<ArtistDetail>) {
         adapter.items = artists
         currentPosition = adapter.getItemPositionById(id)
-        addNotification(id)
+        viewPager.setOnPageChangeListener(this)
         viewPager.setCurrentItem(currentPosition)
+
     }
 
     override fun addNotification(id: Long) {
         val position = adapter.getItemPositionById(id)
         if (position == -1) return
-        val mgr = getSystemService(Context.ALARM_SERVICE) as AlarmManager
-        val intent = Intent(this, javaClass<ScheduleService>())
-        val pendingIntent = PendingIntent?.getService(this, id.toInt(), intent, 0)
-        mgr.set(AlarmManager.RTC, System.currentTimeMillis() + 5 * 1000, pendingIntent)
-        //NotificationScheduler.add(id, adapter.items?.get(position)?.name, adapter.items?.get(position)?.stage, adapter.items?.get(position)?.real_start_date)
+        NotificationScheduler().toggleNotification(this, id.toInt(), adapter.items?.get(position)?.real_time_in_milis ?: 0 - (1000 * 60 * 15), adapter.items?.get(position)?.name)
+        if (NotificationScheduler().existsNotification(this, id.toInt()))
+            menuItem?.getIcon()?.setColorFilter(getResources().getColor(android.R.color.white), PorterDuff.Mode.MULTIPLY)
+        else
+            menuItem?.getIcon()?.setColorFilter(getResources().getColor(R.color.background), PorterDuff.Mode.MULTIPLY)
+    }
+
+    override fun onPageSelected(position: Int) {
+        id = adapter.items?.get(position)?.id ?: 0
+        invalidateOptionsMenu()
+    }
+
+    override fun onPageScrollStateChanged(state: Int) {
+
+    }
+
+    override fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) {
+
     }
 }

@@ -18,6 +18,7 @@ class ArtistDetailMapper() {
         return artists.map({
             val format = SimpleDateFormat("yyyy-MM-dd'T'hh:mm:ss")
             val date = format.parse(it.start_date)
+            val start_time_in_milis = date.getTime()
             val cal = GregorianCalendar()
             cal.setTime(date)
             var hour = cal.get(Calendar.HOUR_OF_DAY).toString()
@@ -33,7 +34,7 @@ class ArtistDetailMapper() {
                 6 -> dayString = "Divendres"
                 7 -> dayString = "Dissabte"
             }
-            ArtistDetail(it.id, it.name, it.description, dayString, time, it.scenario, it.imageURL, it.start_date)
+            ArtistDetail(it.id, it.name, it.description, dayString, time, it.scenario, it.imageURL, it.start_date, start_time_in_milis)
         })
     }
 }

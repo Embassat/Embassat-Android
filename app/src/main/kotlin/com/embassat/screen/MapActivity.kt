@@ -28,8 +28,8 @@ class MapActivity : BaseActivity() {
     }
 
     private fun showAllMarkers(googleMap: GoogleMap) {
-        googleMap.addMarker(MarkerOptions().position(LatLng(41.546838, 2.106158)).title("Principal"))
-        googleMap.addMarker(MarkerOptions().position(LatLng(41.547213, 2.106564)).title("Amfiteatre"))
+        googleMap.addMarker(MarkerOptions().position(LatLng(41.553602, 2.099773)).title("Escenari Principal"))
+        googleMap.addMarker(MarkerOptions().position(LatLng(41.554052, 2.099800)).title("Yeearphone"))
         googleMap.addMarker(MarkerOptions().position(LatLng(41.545738, 2.106824)).title("Mirador Museu del Gas"))
 
         googleMap.addMarker(MarkerOptions().position(LatLng(41.5493037, 2.1083694)).title("Balboa").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN)))

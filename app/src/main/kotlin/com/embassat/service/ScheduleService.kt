@@ -23,17 +23,17 @@ class ScheduleService() : IntentService("") {
 
         // build notification
         // the addAction re-use the same intent to keep the example short
+        val name = p0?.getStringExtra("name")
         val n  = NotificationCompat.Builder(this)
-                .setContentTitle("New mail from " + "test@gmail.com")
-                .setContentText("Subject")
-                .setSmallIcon(R.mipmap.ic_launcher)
+                .setContentTitle(name + " comença en 15 minuts!")
+                .setSmallIcon(R.mipmap.notification)
                 .setContentIntent(pIntent)
                 .setAutoCancel(true)
                 .build()
 
         val  notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager;
 
-        notificationManager.notify(0, n);
+        notificationManager.notify(p0?.getIntExtra("id", 0) ?: 0, n);
     }
 
 }

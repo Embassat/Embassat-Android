@@ -3,5 +3,6 @@
     <item
         android:id="@+id/fav_option"
         android:icon="@drawable/fav"
+        android:showAsAction="always"
         android:title="@string/artist_fav_option_title" />
 </menu>
