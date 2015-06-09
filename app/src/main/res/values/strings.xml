@@ -28,6 +28,7 @@
 
     <!-- ARTISTS -->
     <string name="title_activity_artists">Artistes</string>
+    <string name="artist_fav_option_title">Favorit</string>
 
     <!-- HORARIS -->
     <string name="title_activity_horaris">Horaris</string>

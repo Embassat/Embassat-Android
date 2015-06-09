@@ -2,6 +2,8 @@ package com.embassat.screen
 
 import android.support.v4.view.ViewPager
 import android.support.v7.widget.LinearLayoutManager
+import android.view.Menu
+import android.view.MenuItem
 import com.embassat.R
 import com.embassat.adapter.ArtistsPagerFragmentAdapter
 import com.embassat.base.BaseActivity
@@ -46,6 +48,18 @@ public class ArtistsPagerActivity : BaseActivity(), ArtistsPagerView, Injector b
     override fun onPause() {
         super<BaseActivity>.onPause()
         presenter.onPause()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu) : Boolean {
+        super<BaseActivity>.onCreateOptionsMenu(menu)
+        menu.add(R.menu.artist_detail)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem) : Boolean {
+        when (item.getItemId()) {
+            R.id.fav_option ->
+        }
     }
 
     override fun showArtists(artists: List<ArtistDetail>) {
