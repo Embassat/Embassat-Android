@@ -1,5 +1,10 @@
 package com.embassat.screen
 
+import android.app.AlarmManager
+import android.app.PendingIntent
+import android.content.Context
+import android.content.Intent
+import android.os.SystemClock
 import android.support.v4.view.ViewPager
 import android.support.v7.widget.LinearLayoutManager
 import android.view.Menu
@@ -10,10 +15,12 @@ import com.embassat.base.BaseActivity
 import com.embassat.extension.bindView
 import com.embassat.module.Inject
 import com.embassat.module.Injector
+import com.embassat.notification.NotificationScheduler
 import com.embassat.presentation.entity.ArtistDetail
 import com.embassat.presentation.entity.mapper.ArtistDetailMapper
 import com.embassat.presentation.presenter.ArtistsPagerPresenter
 import com.embassat.presentation.view.ArtistsPagerView
+import com.embassat.service.ScheduleService
 
 /**
  * Created by Quique on 25/5/15.
@@ -65,6 +72,17 @@ public class ArtistsPagerActivity : BaseActivity(), ArtistsPagerView, Injector b
     override fun showArtists(artists: List<ArtistDetail>) {
         adapter.items = artists
         currentPosition = adapter.getItemPositionById(id)
+        addNotification(id)
         viewPager.setCurrentItem(currentPosition)
+    }
+
+    override fun addNotification(id: Long) {
+        val position = adapter.getItemPositionById(id)
+        if (position == -1) return
+        val mgr = getSystemService(Context.ALARM_SERVICE) as AlarmManager
+        val intent = Intent(this, javaClass<ScheduleService>())
+        val pendingIntent = PendingIntent?.getService(this, id.toInt(), intent, 0)
+        mgr.set(AlarmManager.RTC, System.currentTimeMillis() + 5 * 1000, pendingIntent)
+        //NotificationScheduler.add(id, adapter.items?.get(position)?.name, adapter.items?.get(position)?.stage, adapter.items?.get(position)?.real_start_date)
     }
 }

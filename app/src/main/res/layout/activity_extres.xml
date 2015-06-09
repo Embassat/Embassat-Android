@@ -28,7 +28,6 @@
         <com.embassat.view.ApercuTextView
             tools:text="Dissabte"
             android:text="@string/extres_item_title_1"
-            android:id="@+id/artist_detail_fragment_day"
             android:textColor="@color/primary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -36,7 +35,6 @@
             tools:text="22:00"
             android:text="@string/extres_item_time_1"
             android:layout_gravity="center"
-            android:id="@+id/artist_detail_fragment_hour"
             android:textColor="@color/primary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -44,7 +42,6 @@
             tools:text="Principal"
             android:text="@string/extres_item_place_1"
             android:layout_gravity="right"
-            android:id="@+id/artist_detail_fragment_stage"
             android:textColor="@color/primary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -61,7 +58,7 @@
 
                 <TextView
                     android:text="@string/extres_item_day_1"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold"
                     android:textColor="@color/primary"
                     android:layout_width="match_parent"
@@ -70,7 +67,7 @@
                 <TextView
                     android:layout_marginTop="20dp"
                     android:text="@string/extres_text_1_a"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textColor="@android:color/white"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"/>
@@ -78,7 +75,7 @@
                 <TextView
                     android:layout_marginTop="20dp"
                     android:text="@string/extres_text_1_b"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textColor="@android:color/white"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"/>
@@ -86,7 +83,7 @@
                 <TextView
                     android:layout_marginTop="20dp"
                     android:text="@string/extres_text_1_c"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textColor="@android:color/white"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"/>
@@ -104,7 +101,6 @@
         <com.embassat.view.ApercuTextView
             tools:text="Dissabte"
             android:text="@string/extres_item_title_2"
-            android:id="@+id/artist_detail_fragment_day"
             android:textColor="@color/primary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -112,7 +108,6 @@
             tools:text="22:00"
             android:text="@string/extres_item_time_2"
             android:layout_gravity="center"
-            android:id="@+id/artist_detail_fragment_hour"
             android:textColor="@color/primary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -120,7 +115,6 @@
             tools:text="Principal"
             android:text="@string/extres_item_place_2"
             android:layout_gravity="right"
-            android:id="@+id/artist_detail_fragment_stage"
             android:textColor="@color/primary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -137,7 +131,7 @@
 
                 <TextView
                     android:text="@string/extres_text_2_a"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textColor="@android:color/white"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"/>
@@ -145,28 +139,28 @@
                 <TextView
                     android:layout_marginTop="20dp"
                     android:text="@string/extres_text_2_b"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textColor="@android:color/white"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"/>
 
                 <TextView
                     android:text="@string/extres_text_2_c"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textColor="@android:color/white"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"/>
 
                 <TextView
                     android:text="@string/extres_text_2_d"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textColor="@android:color/white"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"/>
 
                 <TextView
                     android:text="@string/extres_text_2_e"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textColor="@android:color/white"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"/>

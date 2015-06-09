@@ -57,6 +57,8 @@
         <activity android:name=".screen.ExtraActivity"
             android:theme="@style/EmbassatTheme.NoActionBar"
             android:parentActivityName=".screen.MainActivity" />
+        <service android:name=".service.ScheduleService" >
+        </service>
     </application>
 
 </manifest>

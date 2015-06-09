@@ -37,6 +37,6 @@ class ArtistsPagerFragmentAdapter(fm: FragmentManager) : FragmentStatePagerAdapt
         for (i in items!!.indices) {
             if (items!!.get(i).id == id) return i
         }
-        return 0
+        return -1
     }
 }

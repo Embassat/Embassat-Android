@@ -33,7 +33,7 @@ class ArtistDetailMapper() {
                 6 -> dayString = "Divendres"
                 7 -> dayString = "Dissabte"
             }
-            ArtistDetail(it.id, it.name, it.description, dayString, time, it.scenario, it.imageURL)
+            ArtistDetail(it.id, it.name, it.description, dayString, time, it.scenario, it.imageURL, it.start_date)
         })
     }
 }
