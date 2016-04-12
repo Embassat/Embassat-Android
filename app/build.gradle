@@ -24,8 +24,6 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project (":data")
-    compile project (":presentation")
     compile parent.ext.libAppCompat
     compile parent.ext.libRecyclerView
     compile parent.ext.libPlayServices
@@ -36,17 +34,5 @@ dependencies {
     compile parent.ext.libKotlin
     compile parent.ext.libEventBus
     compile parent.ext.libJobQueue
-    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-}
-buildscript {
-    ext.kotlin_version = '0.11.91.4'
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-    }
-}
-repositories {
-    mavenCentral()
+    compile 'com.jakewharton:butterknife:7.0.1'
 }

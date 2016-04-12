@@ -18,7 +18,7 @@ import com.embassat.screen.ScheduleActivity
 class ScheduleService() : IntentService("") {
 
     override fun onHandleIntent(p0: Intent?) {
-        val intent = Intent(this, javaClass<ScheduleActivity>())
+        val intent = Intent(this, ScheduleActivity::class.java)
         val pIntent = PendingIntent.getActivity(this, 0, intent, 0);
 
         // build notification

@@ -20,11 +20,11 @@ class MapActivity : BaseActivity() {
     override fun init() {
 
         setSupportActionBar(toolbar)
-        getSupportActionBar().setDisplayShowTitleEnabled(false)
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         toolbarTitle.setText(R.string.title_activity_map)
 
-        (getSupportFragmentManager().findFragmentById(R.id.map) as SupportMapFragment).getMapAsync() { map -> showAllMarkers(map) }
+        (supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment).getMapAsync() { map -> showAllMarkers(map) }
     }
 
     private fun showAllMarkers(googleMap: GoogleMap) {
@@ -40,6 +40,6 @@ class MapActivity : BaseActivity() {
 
         googleMap.moveCamera(center)
         googleMap.animateCamera(zoom)
-        googleMap.setMyLocationEnabled(true)
+        googleMap.isMyLocationEnabled = true
     }
 }

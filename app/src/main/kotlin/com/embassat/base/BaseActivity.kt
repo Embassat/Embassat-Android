@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
 import android.widget.TextView
 import com.embassat.R
-import com.embassat.extension.bindView
 
 /**
  * Created by Quique on 20/05/15.
@@ -14,8 +13,8 @@ import com.embassat.extension.bindView
 abstract class BaseActivity : AppCompatActivity() {
 
     protected abstract val layoutResource : Int
-    protected val toolbar : Toolbar by bindView(R.id.toolbar)
-    protected val toolbarTitle : TextView by bindView(R.id.toolbar_title)
+    protected val toolbar = findViewById(R.id.toolbar) as Toolbar
+    protected val toolbarTitle = findViewById(R.id.toolbar_title) as TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

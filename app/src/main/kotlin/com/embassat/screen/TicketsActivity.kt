@@ -1,7 +1,5 @@
 package com.embassat.screen
 
-import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.text.Html
 import android.widget.TextView
 import com.embassat.R
@@ -21,8 +19,8 @@ public class TicketsActivity : BaseActivity() {
 
     override fun init() {
         setSupportActionBar(toolbar)
-        getSupportActionBar().setDisplayShowTitleEnabled(false)
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         toolbarTitle.setText(R.string.title_activity_tickets)
         findViewById(R.id.compra_abonament_button).setOnClickListener{openWeb(ticketeaUrl)}
         findViewById(R.id.compra_entrada_dia_button).setOnClickListener{openWeb(ticketeaUrl)}

@@ -15,8 +15,8 @@ public class ExtraActivity : BaseActivity() {
 
     override fun init() {
         setSupportActionBar(toolbar)
-        getSupportActionBar().setDisplayShowTitleEnabled(false)
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         toolbarTitle.setText(R.string.title_activity_extres)
     }
 }

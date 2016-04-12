@@ -1,13 +1,11 @@
 package com.embassat.adapter
 
-import android.support.v4.view.LayoutInflaterCompat
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import com.embassat.R
-import com.embassat.extension.bindView
 import com.embassat.presentation.entity.ArtistName
 
 /**
@@ -18,7 +16,7 @@ class ArtistNameAdapter() : RecyclerView.Adapter<ArtistNameViewHolder>() {
 
     var items: List<ArtistName>? = null
         set(value) {
-            $items = value
+            items = value
             notifyDataSetChanged()
         }
 
@@ -35,17 +33,17 @@ class ArtistNameAdapter() : RecyclerView.Adapter<ArtistNameViewHolder>() {
         else holder?.setSeparatorVisibility(View.VISIBLE)
     }
 
-    override fun getItemCount() = items?.size() ?: 0
+    override fun getItemCount() = items?.size ?: 0
 }
 
-private class ArtistNameViewHolder(view: View, var onItemClickListener: ((ArtistName) -> Unit)?) : RecyclerView.ViewHolder(view) {
+class ArtistNameViewHolder(view: View, var onItemClickListener: ((ArtistName) -> Unit)?) : RecyclerView.ViewHolder(view) {
 
-    private val title: TextView by bindView(R.id.itemBasicTextTextView)
-    private val separator: View by bindView(R.id.itemBasicTextSeparator)
+    private val title = view.findViewById(R.id.itemBasicTextTextView) as TextView
+    private val separator= view.findViewById(R.id.itemBasicTextSeparator)
 
     fun setItem(item: ArtistName) {
         itemView?.setOnClickListener { onItemClickListener?.invoke(item) }
-        title.setText(item.name)
+        title.text = item.name
     }
 
     fun setSeparatorVisibility(visibility: Int) {

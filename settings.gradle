@@ -1,1 +1,1 @@
-include ':libraries:rxkotlin',':app',':data',':domain',':presentation',':repository'
+include ':libraries:rxkotlin',':app'

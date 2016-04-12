@@ -12,7 +12,7 @@ private val artists : MutableList<Artist> = ArrayList()
 public class EmbassatModel {
 
     public fun getArtists() : Observable<List<Artist>> {
-        if (artists.size() > 0) return Observable.just(artists)
+        if (artists.size > 0) return Observable.just(artists)
         val artistsObservable = EmbassatAPI().getArtists()
         artistsObservable.subscribe{result -> updateArtists(result)}
         return artistsObservable

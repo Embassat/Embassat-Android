@@ -10,9 +10,9 @@ import com.embassat.domain.interactor.GetArtistsInteractor
  * Created by Quique on 20/05/15.
  */
 
-public trait DomainModule : GetArtistsInteractorProvider
+public interface  DomainModule : GetArtistsInteractorProvider
 
-public trait GetArtistsInteractorProvider {
+public interface  GetArtistsInteractorProvider {
     val artistsInteractorProvider: GetArtistsInteractor
     val artistInteractorProvider: GetArtistInteractor
 }

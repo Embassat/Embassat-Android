@@ -10,7 +10,7 @@ import kotlin.properties.Delegates
  * Created by Quique on 20/05/15.
  */
 
-trait Injector : AppModule, DomainModule, RepositoryModule, DataModule
+interface  Injector : AppModule, DomainModule, RepositoryModule, DataModule
 
 class InjectorImpl(
         appModule: AppModule,

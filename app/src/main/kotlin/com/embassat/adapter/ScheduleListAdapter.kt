@@ -17,12 +17,12 @@ class ScheduleListAdapter() : RecyclerView.Adapter<ScheduleListAdapter.MainMenuI
 
     var items: List<ArtistSchedule>? = null
         set(value) {
-            $items = value
+            items = value
             notifyDataSetChanged()
         }
 
     override fun getItemCount(): Int {
-        return items?.size() ?: 0
+        return items?.size ?: 0
     }
 
     override fun onBindViewHolder(viewHolder: MainMenuItemViewHolder, position: Int) {

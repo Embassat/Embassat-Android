@@ -17,11 +17,11 @@ class ArtistsPagerFragmentAdapter(fm: FragmentManager) : FragmentStatePagerAdapt
 
     var items: List<ArtistDetail>? = null
         set(value) {
-            $items = value
+            items = value
             notifyDataSetChanged()
         }
 
-    override fun getCount() = items?.size() ?: 0
+    override fun getCount() = items?.size ?: 0
 
     override fun getItem(position: Int): Fragment {
         val fragment = ArtistDetailFragment()

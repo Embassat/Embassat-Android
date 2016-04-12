@@ -1,20 +1,15 @@
 package com.embassat.module
 
-import android.util.Log
-import com.embassat.R
-import com.embassat.module.AppContext
-import com.embassat.module.AppModule
-import com.embassat.model.EmbassatService
+import com.embassat.data.embassat.EmbassatService
 import retrofit.RestAdapter
-import java.io.IOException
 
 /**
  * Created by Quique on 20/05/15.
  */
 
-public trait DataModule : EmbassatServiceSingleton
+public interface  DataModule : EmbassatServiceSingleton
 
-public trait EmbassatServiceSingleton {
+public interface  EmbassatServiceSingleton {
     val embassatService: EmbassatService
 }
 
@@ -30,6 +25,6 @@ class DataModuleImpl(appModule: AppModule) : DataModule, AppContext by appModule
                 .setEndpoint(HOST)
                 .build()
 
-        embassatService = restAdapter.create(javaClass<EmbassatService>())
+        embassatService = restAdapter.create(EmbassatService::class.java)
     }
 }

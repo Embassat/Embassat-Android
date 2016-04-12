@@ -20,23 +20,23 @@ class NotificationScheduler {
 
     fun addNotification(context: Context, id: Int, time: Long, name: String?) {
         val mgr = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
-        val intent = Intent(context, javaClass<ScheduleService>())
+        val intent = Intent(context, ScheduleService::class.java)
         intent.putExtra("name", name)
         intent.putExtra("id", id)
-        val pendingIntent = PendingIntent?.getService(context, id, intent, PendingIntent.FLAG_UPDATE_CURRENT)
+        val pendingIntent = PendingIntent.getService(context, id, intent, PendingIntent.FLAG_UPDATE_CURRENT)
         mgr.set(AlarmManager.RTC, time, pendingIntent)
     }
 
     fun removeNotification(context: Context, id: Int) {
         val mgr = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
-        val intent = Intent(context, javaClass<ScheduleService>())
-        val pendingIntent = PendingIntent?.getService(context, id, intent, PendingIntent.FLAG_UPDATE_CURRENT)
+        val intent = Intent(context, ScheduleService::class.java)
+        val pendingIntent = PendingIntent.getService(context, id, intent, PendingIntent.FLAG_UPDATE_CURRENT)
         pendingIntent.cancel()
         mgr.cancel(pendingIntent)
     }
 
     fun existsNotification(context: Context, id: Int): Boolean {
-        val intent = Intent(context, javaClass<ScheduleService>())
+        val intent = Intent(context, ScheduleService::class.java)
         return PendingIntent.getService(context, id, intent, PendingIntent.FLAG_NO_CREATE) != null
     }
 }

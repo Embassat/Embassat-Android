@@ -12,9 +12,9 @@ import com.embassat.repository.ArtistRepositoryImp
  * Created by Quique on 20/05/15.
  */
 
-public trait RepositoryModule : ArtistRepositorySingleton
+public interface  RepositoryModule : ArtistRepositorySingleton
 
-public trait ArtistRepositorySingleton {
+public interface  ArtistRepositorySingleton {
     val artistRepository: ArtistRepository
 }
 

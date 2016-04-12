@@ -3,19 +3,18 @@ package com.embassat.screen
 import android.widget.TextView
 import com.embassat.R
 import com.embassat.base.BaseActivity
-import com.embassat.extension.bindView
 import com.embassat.extension.navigate
 
 public class MainActivity : BaseActivity() {
 
     override val layoutResource: Int = R.layout.activity_main
 
-    val optionInfo : TextView by bindView(R.id.main_option_info)
-    val optionArtists : TextView by bindView(R.id.main_option_artists)
-    val optionSchedule : TextView by bindView(R.id.main_option_schedule)
-    val optionMap : TextView by bindView(R.id.main_option_map)
-    val mapTickets : TextView by bindView(R.id.main_option_tickets)
-    val mapExtra : TextView by bindView(R.id.main_option_extra)
+    val optionInfo = findViewById(R.id.main_option_info) as TextView
+    val optionArtists = findViewById(R.id.main_option_artists) as TextView
+    val optionSchedule = findViewById(R.id.main_option_schedule) as TextView
+    val optionMap = findViewById(R.id.main_option_map) as TextView
+    val mapTickets = findViewById(R.id.main_option_tickets) as TextView
+    val mapExtra = findViewById(R.id.main_option_extra) as TextView
 
     override fun init() {
         optionInfo.setOnClickListener { navigate<InfoActivity>() }

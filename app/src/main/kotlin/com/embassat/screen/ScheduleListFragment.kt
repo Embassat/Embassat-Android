@@ -7,20 +7,14 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import com.embassat.R
 import com.embassat.adapter.ScheduleListAdapter
-import com.embassat.extension.bindView
-import com.embassat.model.Artist
-import com.embassat.model.EmbassatModel
 import com.embassat.module.Inject
 import com.embassat.module.Injector
 import com.embassat.presentation.entity.ArtistSchedule
 import com.embassat.presentation.entity.mapper.ArtistScheduleMapper
 import com.embassat.presentation.presenter.ArtistsSchedulePresenter
 import com.embassat.presentation.view.ArtistsScheduleView
-import rx.Observable
-import java.util.ArrayList
 
 /**
  * Created by Quique on 16/5/15.
@@ -30,7 +24,6 @@ public class ScheduleListFragment : Fragment(), ArtistsScheduleView, Injector by
 
     private val EXTRA_POSITION = "extra_position"
 
-    val artistsRecyclerView : RecyclerView by bindView(R.id.scheduleListRecyclerView)
     val adapter: ScheduleListAdapter = ScheduleListAdapter()
     var presenter : ArtistsSchedulePresenter? = null
     var position : Int = 0;
@@ -46,8 +39,9 @@ public class ScheduleListFragment : Fragment(), ArtistsScheduleView, Injector by
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        artistsRecyclerView.setLayoutManager(LinearLayoutManager(getActivity()))
-        artistsRecyclerView.setAdapter(adapter)
+        var artistsRecyclerView = view.findViewById(R.id.scheduleListRecyclerView) as RecyclerView;
+        artistsRecyclerView.layoutManager = LinearLayoutManager(getActivity())
+        artistsRecyclerView.adapter = adapter
     }
 
     override fun onResume() {
