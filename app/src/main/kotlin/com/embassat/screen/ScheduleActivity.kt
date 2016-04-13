@@ -16,15 +16,16 @@ public class ScheduleActivity : BaseActivity() {
 
     override val layoutResource: Int = R.layout.activity_schedule
 
-    val viewPager = findViewById(R.id.schedule_view_pager) as ViewPager
+    lateinit var viewPager : ViewPager
     val adapter = ScheduleFragmentAdapter(supportFragmentManager)
 
     override fun init() {
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayShowTitleEnabled(false)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        toolbarTitle.setText(R.string.title_activity_horaris)
+        toolbarTitle?.setText(R.string.title_activity_horaris)
         activeTabView(0)
+        viewPager = findViewById(R.id.schedule_view_pager) as ViewPager
         viewPager.offscreenPageLimit = 2
         viewPager.setOnPageChangeListener(object : ViewPager.SimpleOnPageChangeListener() {
             override fun onPageSelected(position: Int) {

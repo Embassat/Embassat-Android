@@ -20,13 +20,13 @@ import com.embassat.presentation.view.ArtistsPagerView
  * Created by Quique on 25/5/15.
  */
 
-public class ArtistsPagerActivity : BaseActivity(), ArtistsPagerView, ViewPager.OnPageChangeListener, Injector by Inject.instance {
+class ArtistsPagerActivity : BaseActivity(), ArtistsPagerView, ViewPager.OnPageChangeListener, Injector by Inject.instance {
 
     override val layoutResource: Int = R.layout.activity_artists_pager
 
     val viewPager = findViewById(R.id.artists_pager_view_pager) as ViewPager
 
-    val adapter = ArtistsPagerFragmentAdapter(getSupportFragmentManager())
+    val adapter = ArtistsPagerFragmentAdapter(supportFragmentManager)
     val presenter = ArtistsPagerPresenter(this, bus, artistsInteractorProvider, interactorExecutor, ArtistDetailMapper())
     var id : Long = 0
     var currentPosition = 0
@@ -36,24 +36,24 @@ public class ArtistsPagerActivity : BaseActivity(), ArtistsPagerView, ViewPager.
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayShowTitleEnabled(false)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        id = getIntent().getExtras().getLong("ID")
-        toolbarTitle.setText(R.string.title_activity_artists)
+        id = intent.extras.getLong("ID")
+        toolbarTitle?.setText(R.string.title_activity_artists)
         viewPager.setOffscreenPageLimit(2)
         viewPager.setAdapter(adapter)
     }
 
     override fun onResume() {
-        super<BaseActivity>.onResume()
+        super.onResume()
         presenter.onResume()
     }
 
     override fun onPause() {
-        super<BaseActivity>.onPause()
+        super.onPause()
         presenter.onPause()
     }
 
     override fun onCreateOptionsMenu(menu: Menu) : Boolean {
-        super<BaseActivity>.onPrepareOptionsMenu(menu)
+        super.onPrepareOptionsMenu(menu)
         MenuInflater(this).inflate(R.menu.artist_detail, menu)
 
         menuItem = menu.findItem(R.id.fav_option)

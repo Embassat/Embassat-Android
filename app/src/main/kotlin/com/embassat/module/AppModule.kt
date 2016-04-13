@@ -17,10 +17,10 @@ interface  AppModule : AppContext, BusSingleton, InteractorExecutorSingleton, Jo
 
 class AppModuleImpl(context: Context): AppModule {
     override val appContext = context;
-    override val bus by Delegates.lazy { BusImpl() }
-    override val jobManager by Delegates.lazy { CustomJobManager(context) }
-    override val interactorExecutor by Delegates.lazy { InteractorExecutorImpl(jobManager, bus) }
-    override val language by Delegates.lazy { Locale.getDefault().getLanguage() }
+    override val bus = BusImpl()
+    override val jobManager = CustomJobManager(context)
+    override val interactorExecutor = InteractorExecutorImpl(jobManager, bus)
+    override val language = Locale.getDefault().getLanguage()
 }
 
 interface AppContext {

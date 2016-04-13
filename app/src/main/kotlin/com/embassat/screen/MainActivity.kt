@@ -9,14 +9,20 @@ public class MainActivity : BaseActivity() {
 
     override val layoutResource: Int = R.layout.activity_main
 
-    val optionInfo = findViewById(R.id.main_option_info) as TextView
-    val optionArtists = findViewById(R.id.main_option_artists) as TextView
-    val optionSchedule = findViewById(R.id.main_option_schedule) as TextView
-    val optionMap = findViewById(R.id.main_option_map) as TextView
-    val mapTickets = findViewById(R.id.main_option_tickets) as TextView
-    val mapExtra = findViewById(R.id.main_option_extra) as TextView
+    lateinit var optionInfo : TextView
+    lateinit var optionArtists : TextView
+    lateinit var optionSchedule : TextView
+    lateinit var optionMap  : TextView
+    lateinit var mapTickets : TextView
+    lateinit var mapExtra : TextView
 
     override fun init() {
+        optionInfo = findViewById(R.id.main_option_info) as TextView
+        optionArtists = findViewById(R.id.main_option_artists) as TextView
+        optionSchedule = findViewById(R.id.main_option_schedule) as TextView
+        optionMap = findViewById(R.id.main_option_map) as TextView
+        mapTickets = findViewById(R.id.main_option_tickets) as TextView
+        mapExtra = findViewById(R.id.main_option_extra) as TextView
         optionInfo.setOnClickListener { navigate<InfoActivity>() }
         optionArtists.setOnClickListener { navigate<ArtistsActivity>() }
         optionSchedule.setOnClickListener { navigate<ScheduleActivity>() }

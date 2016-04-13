@@ -21,7 +21,7 @@ public class TicketsActivity : BaseActivity() {
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayShowTitleEnabled(false)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        toolbarTitle.setText(R.string.title_activity_tickets)
+        toolbarTitle?.setText(R.string.title_activity_tickets)
         findViewById(R.id.compra_abonament_button).setOnClickListener{openWeb(ticketeaUrl)}
         findViewById(R.id.compra_entrada_dia_button).setOnClickListener{openWeb(ticketeaUrl)}
         findViewById(R.id.compra_entrada_petit_em_button).setOnClickListener{openWeb(ticketeaUrl)}

@@ -1,7 +1,5 @@
 package com.embassat.screen
 
-import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.widget.ImageView
 import com.bumptech.glide.Glide
 import com.embassat.R
@@ -19,7 +17,7 @@ public class InfoActivity : BaseActivity() {
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayShowTitleEnabled(false)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        toolbarTitle.setText(R.string.title_activity_info)
+        toolbarTitle?.setText(R.string.title_activity_info)
 
 
         val embassatImageView = findViewById(R.id.embassat_image) as ImageView

@@ -1,62 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="411c6c4e-a6f0-4cb4-90ae-042e8b5206bf" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/src/main/kotlin/com/embassat/data/CloudArtistDataSet.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/data/CloudArtistDataSet.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/src/main/kotlin/com/embassat/data/embassat/EmbassatService.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/data/embassat/EmbassatService.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/src/main/kotlin/com/embassat/data/embassat/model/EmbassatArtist.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/data/embassat/model/EmbassatArtist.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/src/main/kotlin/com/embassat/data/mapper/ArtistMapper.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/data/mapper/ArtistMapper.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/domain/src/main/kotlin/com/embassat/domain/entity/Artist.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/domain/entity/Artist.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/domain/src/main/kotlin/com/embassat/domain/interactor/GetArtistInteractor.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/domain/interactor/GetArtistInteractor.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/domain/src/main/kotlin/com/embassat/domain/interactor/GetArtistsInteractor.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/domain/interactor/GetArtistsInteractor.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/domain/src/main/kotlin/com/embassat/domain/interactor/base/Bus.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/domain/interactor/base/Bus.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/domain/src/main/kotlin/com/embassat/domain/interactor/base/Event.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/domain/interactor/base/Event.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/domain/src/main/kotlin/com/embassat/domain/interactor/base/Interactor.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/domain/interactor/base/Interactor.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/domain/src/main/kotlin/com/embassat/domain/interactor/base/InteractorExecutor.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/domain/interactor/base/InteractorExecutor.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/domain/src/main/kotlin/com/embassat/domain/interactor/base/InteractorPriority.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/domain/interactor/base/InteractorPriority.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/domain/src/main/kotlin/com/embassat/domain/interactor/event/ArtistEvent.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/domain/interactor/event/ArtistEvent.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/domain/src/main/kotlin/com/embassat/domain/interactor/event/ArtistsEvent.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/domain/interactor/event/ArtistsEvent.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/domain/src/main/kotlin/com/embassat/domain/repository/ArtistRepository.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/domain/repository/ArtistRepository.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/presentation/src/main/kotlin/com/embassat/presentation/entity/ArtistDetail.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/presentation/entity/ArtistDetail.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/presentation/src/main/kotlin/com/embassat/presentation/entity/ArtistName.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/presentation/entity/ArtistName.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/presentation/src/main/kotlin/com/embassat/presentation/entity/ArtistSchedule.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/presentation/entity/ArtistSchedule.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/presentation/src/main/kotlin/com/embassat/presentation/entity/mapper/ArtistDetailMapper.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/presentation/entity/mapper/ArtistDetailMapper.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/presentation/src/main/kotlin/com/embassat/presentation/entity/mapper/ArtistNameMapper.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/presentation/entity/mapper/ArtistNameMapper.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/presentation/src/main/kotlin/com/embassat/presentation/entity/mapper/ArtistScheduleMapper.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/presentation/entity/mapper/ArtistScheduleMapper.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/presentation/src/main/kotlin/com/embassat/presentation/presenter/ArtistsPagerPresenter.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/presentation/presenter/ArtistsPagerPresenter.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/presentation/src/main/kotlin/com/embassat/presentation/presenter/ArtistsPresenter.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/presentation/presenter/ArtistsPresenter.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/presentation/src/main/kotlin/com/embassat/presentation/presenter/ArtistsSchedulePresenter.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/presentation/presenter/ArtistsSchedulePresenter.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/presentation/src/main/kotlin/com/embassat/presentation/presenter/Presenter.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/presentation/presenter/Presenter.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/presentation/src/main/kotlin/com/embassat/presentation/view/ArtistsPagerView.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/presentation/view/ArtistsPagerView.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/presentation/src/main/kotlin/com/embassat/presentation/view/ArtistsScheduleView.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/presentation/view/ArtistsScheduleView.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/presentation/src/main/kotlin/com/embassat/presentation/view/ArtistsView.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/presentation/view/ArtistsView.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/presentation/src/main/kotlin/com/embassat/presentation/view/PresentationView.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/presentation/view/PresentationView.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/repository/src/main/kotlin/com/embassat/repository/ArtistRepositoryImp.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/repository/ArtistRepositoryImp.kt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/repository/src/main/kotlin/com/embassat/repository/dataset/ArtistDataSet.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/repository/dataset/ArtistDataSet.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/adapter/ArtistNameAdapter.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/adapter/ArtistNameAdapter.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/adapter/ArtistsPagerFragmentAdapter.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/adapter/ArtistsPagerFragmentAdapter.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/adapter/ScheduleListAdapter.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/adapter/ScheduleListAdapter.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/base/BaseActivity.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/base/BaseActivity.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/domain/DelegatesExt.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/domain/DelegatesExt.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/extension/ActivityExtension.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/extension/ActivityExtension.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/extension/KotterKnife.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/extension/KotterKnife.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/model/EmbassatAPI.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/model/EmbassatAPI.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/model/EmbassatModel.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/model/EmbassatModel.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/module/AppModule.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/module/AppModule.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/module/DataModule.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/module/DataModule.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/module/DomainModule.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/module/DomainModule.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/module/Injector.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/module/Injector.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/module/RepositoryModule.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/module/RepositoryModule.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/notification/NotificationScheduler.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/notification/NotificationScheduler.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ArtistDetailFragment.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ArtistDetailFragment.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ArtistsActivity.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ArtistsActivity.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ArtistsPagerActivity.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ArtistsPagerActivity.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ExtraActivity.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ExtraActivity.kt" />
@@ -64,18 +21,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/MainActivity.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/MainActivity.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/MapActivity.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/MapActivity.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ScheduleActivity.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ScheduleActivity.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ScheduleListFragment.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ScheduleListFragment.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/TicketsActivity.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/TicketsActivity.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/service/ScheduleService.kt" afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/service/ScheduleService.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/build.gradle" afterPath="$PROJECT_DIR$/data/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/domain/build.gradle" afterPath="$PROJECT_DIR$/domain/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/libraries.iml" afterPath="$PROJECT_DIR$/libraries/libraries.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/rxkotlin/rxkotlin.iml" afterPath="$PROJECT_DIR$/libraries/rxkotlin/rxkotlin.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/presentation/build.gradle" afterPath="$PROJECT_DIR$/presentation/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/build.gradle" afterPath="$PROJECT_DIR$/repository/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
     </list>
     <ignored path="embassat2016kitlin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -105,23 +51,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AppModule.kt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/module/AppModule.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32608697">
-              <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-              <folding>
-                <element signature="e#29#400#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ArtistsActivity.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ArtistsActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+              <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
               <folding>
                 <element signature="e#29#567#0" expanded="true" />
               </folding>
@@ -133,20 +67,10 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/InfoActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
+              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
               <folding>
-                <element signature="e#29#225#0" expanded="true" />
+                <element signature="e#29#152#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArtistDetailFragment.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ArtistDetailFragment.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -155,9 +79,31 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ArtistsPagerActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="98" column="31" selection-start-line="98" selection-start-column="31" selection-end-line="98" selection-end-column="31" />
+              <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
               <folding>
                 <element signature="e#29#671#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.416667">
+              <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/MainActivity.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+              <folding>
+                <element signature="e#29#158#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -167,17 +113,17 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ExtraActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TicketsActivity.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TicketsActivity.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/TicketsActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.4633867">
+              <caret line="27" column="82" selection-start-line="27" selection-start-column="82" selection-end-line="27" selection-end-column="82" />
               <folding>
                 <element signature="e#29#182#0" expanded="true" />
               </folding>
@@ -189,7 +135,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ScheduleActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
               <folding>
                 <element signature="e#29#279#0" expanded="true" />
               </folding>
@@ -201,8 +147,20 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/MapActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseActivity.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/base/BaseActivity.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+              <folding>
+                <element signature="e#27#218#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -2452,24 +2410,24 @@
         <option value="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ScheduleListFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/adapter/ArtistNameAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/notification/NotificationScheduler.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/base/BaseActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/extension/ActivityExtension.kt" />
         <option value="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/model/EmbassatModel.kt" />
         <option value="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/presentation/view/ArtistsPagerView.kt" />
         <option value="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/model/EmbassatAPI.kt" />
         <option value="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/module/DataModule.kt" />
         <option value="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/presentation/entity/mapper/ArtistScheduleMapper.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/MainActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/service/ScheduleService.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/TicketsActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ArtistDetailFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/module/AppModule.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/MainActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/base/BaseActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ArtistsActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ArtistsPagerActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ExtraActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/InfoActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/MapActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ScheduleActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/InfoActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ExtraActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ArtistDetailFragment.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ArtistsPagerActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ArtistsActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/module/AppModule.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/TicketsActivity.kt" />
       </list>
     </option>
   </component>
@@ -2502,6 +2460,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Project Files">
@@ -2514,7 +2473,6 @@
         </subPane>
       </pane>
       <pane id="ProjectPane" />
-      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2576,7 +2534,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="FullScreen" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="AppMo&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/module/AppModule.kt&#10;ArtistAc&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/screen/ArtistsActivity.kt&#10;ArtistPageActi&#9;null&#9;null&#10;ArtisDet&#9;null&#9;null&#10;InfoA&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/screen/InfoActivity.kt&#10;ExtraA&#9;null&#9;null&#10;InfoAc&#9;null&#9;null&#10;ArtistsA&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/screen/ArtistsActivity.kt&#10;MapA&#9;null&#9;null&#10;ScheduleAc&#9;null&#9;null&#10;TicketsA&#9;null&#9;null&#10;ScheduleSer&#9;null&#9;null&#10;MainA&#9;null&#9;null&#10;ArtisScheMapp&#9;null&#9;null&#10;DataMod&#9;null&#9;null&#10;EmbassatAp&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/model/EmbassatAPI.kt&#10;ArtistPageV&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/presentation/view/ArtistsPagerView.kt&#10;AppModul&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/module/AppModule.kt&#10;EmbassatMo&#9;null&#9;null&#10;ActivityExte&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/extension/ActivityExtension.kt&#10;BaseAc&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/base/BaseActivity.kt&#10;NotificationSche&#9;null&#9;null&#10;EmbassatAP&#9;null&#9;null&#10;ActivityExt&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/extension/ActivityExtension.kt&#10;BaseA&#9;null&#9;null&#10;ArtistNameA&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/adapter/ArtistNameAdapter.kt&#10;build&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/build.gradle&#10;Optiona&#9;null&#9;null&#10;Kotter&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/extension/KotterKnife.kt&#10;InteractorP&#9;null&#9;null&#10;Presenter&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/presentation/presenter/Presenter.kt&#10;ArtistScheV&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/presentation/view/ArtistsScheduleView.kt&#10;ScheduleLisFr&#9;null&#9;null&#10;DataM&#9;null&#9;null&#10;RepoMo&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/module/RepositoryModule.kt&#10;DomainMo&#9;null&#9;null&#10;ArtistInte&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/domain/interactor/GetArtistsInteractor.kt&#10;Injecto&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/module/Injector.kt&#10;Presenta&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/presentation/view/PresentationView.kt&#10;ArtistsV&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/presentation/view/ArtistsView.kt&#10;ArtisRepo&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/domain/repository/ArtistRepository.kt&#10;GetArtistsIn&#9;null&#9;null&#10;Event&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/domain/interactor/base/Event.kt&#10;Interactor&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/domain/interactor/base/Interactor.kt&#10;Intera&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/domain/interactor/base/InteractorExecutor.kt&#10;Delegates&#9;null&#9;null&#10;Bus&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/domain/interactor/base/Bus.kt&#10;BusIm&#9;null&#9;null&#10;ArtistMapp&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/data/mapper/ArtistMapper.kt&#10;ArtistMappe&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/data/mapper/ArtistMapper.kt" />
+    <property name="SearchEverywhereHistoryKey" value="TicketsA&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/screen/TicketsActivity.kt&#10;ScheA&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/screen/ScheduleActivity.kt&#10;MapA&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/screen/MapActivity.kt&#10;InfoAc&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/screen/InfoActivity.kt&#10;ExtraAc&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/screen/ExtraActivity.kt&#10;ArtistPa&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/screen/ArtistsPagerActivity.kt&#10;ArtistA&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/screen/ArtistsActivity.kt&#10;androidma&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/AndroidManifest.xml&#10;ArtisA&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/screen/ArtistsPagerActivity.kt&#10;Activity&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/screen/MainActivity.kt&#10;AppMo&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/module/AppModule.kt&#10;ArtistAc&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/screen/ArtistsActivity.kt&#10;ArtistPageActi&#9;null&#9;null&#10;ArtisDet&#9;null&#9;null&#10;InfoA&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/screen/InfoActivity.kt&#10;ExtraA&#9;null&#9;null&#10;ArtistsA&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/screen/ArtistsActivity.kt&#10;ScheduleAc&#9;null&#9;null&#10;ScheduleSer&#9;null&#9;null&#10;MainA&#9;null&#9;null&#10;ArtisScheMapp&#9;null&#9;null&#10;DataMod&#9;null&#9;null&#10;EmbassatAp&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/model/EmbassatAPI.kt&#10;ArtistPageV&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/presentation/view/ArtistsPagerView.kt&#10;AppModul&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/module/AppModule.kt&#10;EmbassatMo&#9;null&#9;null&#10;ActivityExte&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/extension/ActivityExtension.kt&#10;BaseAc&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/base/BaseActivity.kt&#10;NotificationSche&#9;null&#9;null&#10;EmbassatAP&#9;null&#9;null&#10;ActivityExt&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/extension/ActivityExtension.kt&#10;BaseA&#9;null&#9;null&#10;ArtistNameA&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/adapter/ArtistNameAdapter.kt&#10;build&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/build.gradle&#10;Optiona&#9;null&#9;null&#10;Kotter&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/extension/KotterKnife.kt&#10;InteractorP&#9;null&#9;null&#10;Presenter&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/presentation/presenter/Presenter.kt&#10;ArtistScheV&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/presentation/view/ArtistsScheduleView.kt&#10;ScheduleLisFr&#9;null&#9;null&#10;DataM&#9;null&#9;null&#10;RepoMo&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/module/RepositoryModule.kt&#10;DomainMo&#9;null&#9;null&#10;ArtistInte&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/domain/interactor/GetArtistsInteractor.kt&#10;Injecto&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/module/Injector.kt&#10;Presenta&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/presentation/view/PresentationView.kt&#10;ArtistsV&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/presentation/view/ArtistsView.kt&#10;ArtisRepo&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/domain/repository/ArtistRepository.kt&#10;GetArtistsIn&#9;null&#9;null&#10;Event&#9;FILE&#9;file:///Users/Quique/Development/embassat2016kitlin/app/src/main/kotlin/com/embassat/domain/interactor/base/Event.kt" />
   </component>
   <component name="RunManager" selected="Android Application.app">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -2757,11 +2715,12 @@
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32986626" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32986626" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32986626" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -2771,7 +2730,6 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17384844" sideWeight="0.49811116" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2781,6 +2739,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -2801,22 +2760,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/repository/dataset/ArtistDataSet.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13729978">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/data/embassat/model/EmbassatArtist.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08581236">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/adapter/ArtistsPagerFragmentAdapter.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2829,15 +2772,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/adapter/ScheduleListAdapter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2845,9 +2779,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding>
-            <element signature="e#27#215#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2855,7 +2786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2863,7 +2793,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13729978">
           <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2871,7 +2800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2879,9 +2807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding>
-            <element signature="e#29#102#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2889,7 +2814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1201373">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2897,7 +2821,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13729978">
           <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2905,7 +2828,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.10297483">
           <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2921,7 +2843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2945,7 +2866,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2985,7 +2905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2402746">
           <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3001,7 +2920,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3009,7 +2927,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22311212">
           <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3018,7 +2935,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="98" column="69" selection-start-line="98" selection-start-column="69" selection-end-line="98" selection-end-column="69" />
           <folding>
-            <element signature="e#0#4514#1" expanded="true" />
+            <element signature="e#0#4514#1" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3027,7 +2944,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3035,7 +2951,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-20.0">
           <caret line="36" column="47" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3043,9 +2958,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42906177">
           <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
-          <folding>
-            <element signature="e#32#157#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3053,37 +2965,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.51487416">
           <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/base/BaseActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42906177">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-          <folding>
-            <element signature="e#27#193#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/adapter/ArtistNameAdapter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.617849">
-          <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-          <folding>
-            <element signature="e#30#269#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ScheduleListFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
-          <folding>
-            <element signature="e#29#670#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3091,9 +2972,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-          <folding>
-            <element signature="e#28#75#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3101,7 +2979,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5491991">
           <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3119,9 +2996,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5320366">
           <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
-          <folding>
-            <element signature="e#28#204#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3133,16 +3007,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/MainActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-          <folding>
-            <element signature="e#29#158#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/service/ScheduleService.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3151,66 +3015,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/TicketsActivity.kt">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.0.1-2/552aa65515809ae0cf66eb9a3d162ce80f83fbf5/kotlin-stdlib-1.0.1-2-sources.jar!/kotlin/properties/Delegates.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1201373">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/module/AppModule.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+          <caret line="22" column="61" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
           <folding>
-            <element signature="e#29#182#0" expanded="true" />
+            <element signature="e#29#400#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/MapActivity.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/adapter/ArtistNameAdapter.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+          <folding>
+            <element signature="e#30#269#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/adapter/ScheduleListAdapter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="49" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ScheduleActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#29#279#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ExtraActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/InfoActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
-          <folding>
-            <element signature="e#29#225#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ArtistDetailFragment.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+          <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ArtistsPagerActivity.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ScheduleListFragment.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="98" column="31" selection-start-line="98" selection-start-column="31" selection-end-line="98" selection-end-column="31" />
+          <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
           <folding>
-            <element signature="e#29#671#0" expanded="true" />
+            <element signature="e#29#670#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.416667">
+          <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49330086">
+          <caret line="27" column="69" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/MainActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+          <folding>
+            <element signature="e#29#158#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/base/BaseActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+          <folding>
+            <element signature="e#27#218#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3218,27 +3110,65 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ArtistsActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
           <folding>
             <element signature="e#29#567#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.0.1-2/552aa65515809ae0cf66eb9a3d162ce80f83fbf5/kotlin-stdlib-1.0.1-2-sources.jar!/kotlin/properties/Delegates.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ArtistsPagerActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1201373">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+          <folding>
+            <element signature="e#29#671#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ExtraActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/module/AppModule.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/InfoActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32608697">
-          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
           <folding>
-            <element signature="e#29#400#0" expanded="true" />
+            <element signature="e#29#152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/MapActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/ScheduleActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+          <folding>
+            <element signature="e#29#279#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/kotlin/com/embassat/screen/TicketsActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4633867">
+          <caret line="27" column="82" selection-start-line="27" selection-start-column="82" selection-end-line="27" selection-end-column="82" />
+          <folding>
+            <element signature="e#29#182#0" expanded="true" />
           </folding>
         </state>
       </provider>

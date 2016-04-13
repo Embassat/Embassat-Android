@@ -17,32 +17,33 @@ import com.embassat.presentation.view.ArtistsView
  * Created by Quique on 16/5/15.
  */
 
-public class ArtistsActivity : BaseActivity(), ArtistsView, Injector by Inject.instance {
+class ArtistsActivity : BaseActivity(), ArtistsView, Injector by Inject.instance {
 
     override val layoutResource: Int = R.layout.activity_artists
 
     val adapter = ArtistNameAdapter()
     val presenter = ArtistsPresenter(this, bus, artistsInteractorProvider, interactorExecutor, ArtistNameMapper())
-    val recycler = findViewById(R.id.artists_recycler_view) as RecyclerView
+    lateinit var recycler : RecyclerView
 
     override fun init() {
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayShowTitleEnabled(false)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        toolbarTitle.setText(R.string.title_activity_artists)
+        toolbarTitle?.setText(R.string.title_activity_artists)
         adapter.onItemClickListener = { presenter.onArtistClicked(it) }
         val layoutManager = LinearLayoutManager(this)
-        recycler.setLayoutManager(layoutManager)
-        recycler.setAdapter(adapter)
+        recycler = findViewById(R.id.artists_recycler_view) as RecyclerView
+        recycler.layoutManager = layoutManager
+        recycler.adapter = adapter
     }
 
     override fun onResume() {
-        super<BaseActivity>.onResume()
+        super.onResume()
         presenter.onResume()
     }
 
     override fun onPause() {
-        super<BaseActivity>.onPause()
+        super.onPause()
         presenter.onPause()
     }
 

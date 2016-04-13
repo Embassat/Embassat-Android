@@ -22,7 +22,7 @@ class MapActivity : BaseActivity() {
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayShowTitleEnabled(false)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        toolbarTitle.setText(R.string.title_activity_map)
+        toolbarTitle?.setText(R.string.title_activity_map)
 
         (supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment).getMapAsync() { map -> showAllMarkers(map) }
     }

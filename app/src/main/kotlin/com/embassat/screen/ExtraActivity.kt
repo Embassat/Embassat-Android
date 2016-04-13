@@ -17,6 +17,6 @@ public class ExtraActivity : BaseActivity() {
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayShowTitleEnabled(false)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        toolbarTitle.setText(R.string.title_activity_extres)
+        toolbarTitle?.setText(R.string.title_activity_extres)
     }
 }
