@@ -1,13 +1,11 @@
 package com.embassat.adapter
 
-import android.opengl.Visibility
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import com.embassat.R
-import com.embassat.notification.NotificationScheduler
 import com.embassat.presentation.entity.ArtistSchedule
 
 /**
@@ -16,10 +14,6 @@ import com.embassat.presentation.entity.ArtistSchedule
 class ScheduleListAdapter() : RecyclerView.Adapter<ScheduleListAdapter.MainMenuItemViewHolder>() {
 
     var items: List<ArtistSchedule>? = null
-        set(value) {
-            items = value
-            notifyDataSetChanged()
-        }
 
     override fun getItemCount(): Int {
         return items?.size ?: 0

@@ -8,7 +8,8 @@
     <string name="main_option_schedule">Horaris</string>
     <string name="main_option_map">Mapa</string>
     <string name="main_option_tickets">Entrades</string>
-    <string name="main_option_extra">Extres</string>
+    <string name="main_option_extra">Petit EM\'</string>
+    <string name="main_option_transport">Transport</string>
 
     <!-- INFORMACIÓ -->
     <string name="title_activity_info">Info</string>

@@ -16,10 +16,6 @@ import com.embassat.screen.ScheduleListFragment
 class ArtistsPagerFragmentAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
 
     var items: List<ArtistDetail>? = null
-        set(value) {
-            items = value
-            notifyDataSetChanged()
-        }
 
     override fun getCount() = items?.size ?: 0
 

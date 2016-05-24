@@ -79,6 +79,7 @@ class ArtistsPagerActivity : BaseActivity(), ArtistsPagerView, ViewPager.OnPageC
 
     override fun showArtists(artists: List<ArtistDetail>) {
         adapter.items = artists
+        adapter.notifyDataSetChanged()
         currentPosition = adapter.getItemPositionById(id)
         viewPager.setOnPageChangeListener(this)
         viewPager.setCurrentItem(currentPosition)
