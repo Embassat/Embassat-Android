@@ -7,9 +7,9 @@
     <color name="yellow_escenari">#ffe8c511</color>
     <color name="yellow_active_escenari">#fffbf4d2</color>
 
-    <color name="primary">#fff05158</color>
+    <color name="primary">#2c3792</color>
     <color name="primaryDark">#ffd25057</color>
-    <color name="background">#ff000543</color>
+    <color name="background">#ed292b</color>
     <color name="tab_background">#fff9c5c2</color>
     <color name="tab_background_selected">#fffc7f85</color>
 </resources>

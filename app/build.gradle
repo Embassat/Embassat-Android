@@ -12,7 +12,11 @@ android {
         versionName parent.ext.androidVersionName
     }
     buildTypes {
+        debug {
+            multiDexEnabled true
+        }
         release {
+            multiDexEnabled true
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
@@ -35,4 +39,18 @@ dependencies {
     compile parent.ext.libEventBus
     compile parent.ext.libJobQueue
     compile 'com.jakewharton:butterknife:7.0.1'
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile 'org.jetbrains.anko:anko-sdk15:0.8.3' // sdk19, sdk21, sdk23 are also available
+}
+buildscript {
+    ext.kotlin_version = '1.0.2'
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+repositories {
+    mavenCentral()
 }

@@ -15,10 +15,6 @@ import com.embassat.presentation.entity.ArtistName
 class ArtistNameAdapter() : RecyclerView.Adapter<ArtistNameViewHolder>() {
 
     var items: List<ArtistName>? = null
-        set(value) {
-            items = value
-            notifyDataSetChanged()
-        }
 
     var onItemClickListener: ((ArtistName) -> Unit)? = null
 

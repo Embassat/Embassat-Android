@@ -6,6 +6,8 @@ import com.embassat.domain.interactor.base.InteractorExecutor
 import com.embassat.domain.interactor.event.ArtistsEvent
 import com.embassat.presentation.entity.mapper.ArtistDetailMapper
 import com.embassat.presentation.view.ArtistsPagerView
+import org.jetbrains.anko.async
+import org.jetbrains.anko.uiThread
 
 /**
  * Created by Quique on 25/5/15.
@@ -20,7 +22,13 @@ class ArtistsPagerPresenter(
 
     override fun onResume() {
         super.onResume()
-        interactorExecutor.execute(artistsInteractor)
+        //interactorExecutor.execute(artistsInteractor)
+        async() {
+            var artists = artistsInteractor.getArtists()
+            uiThread {
+                view.showArtists(mapper.transformArtists(artists))
+            }
+        }
     }
 
     fun onEvent(event: ArtistsEvent) {

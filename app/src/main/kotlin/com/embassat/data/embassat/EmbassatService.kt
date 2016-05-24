@@ -1,6 +1,7 @@
 package com.embassat.data.embassat
 
 import com.embassat.data.embassat.model.EmbassatArtist
+import retrofit.Callback
 import retrofit.RestAdapter
 import retrofit.http.GET
 import retrofit.http.Path

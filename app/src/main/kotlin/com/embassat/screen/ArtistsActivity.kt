@@ -49,6 +49,7 @@ class ArtistsActivity : BaseActivity(), ArtistsView, Injector by Inject.instance
 
     override fun showArtists(artists: List<ArtistName>) {
         adapter.items = artists
+        adapter.notifyDataSetChanged()
     }
 
     override fun navigateToDetail(id: Long) {

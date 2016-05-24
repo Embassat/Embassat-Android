@@ -24,7 +24,7 @@ class ArtistsPagerActivity : BaseActivity(), ArtistsPagerView, ViewPager.OnPageC
 
     override val layoutResource: Int = R.layout.activity_artists_pager
 
-    val viewPager = findViewById(R.id.artists_pager_view_pager) as ViewPager
+    lateinit var viewPager : ViewPager
 
     val adapter = ArtistsPagerFragmentAdapter(supportFragmentManager)
     val presenter = ArtistsPagerPresenter(this, bus, artistsInteractorProvider, interactorExecutor, ArtistDetailMapper())
@@ -38,6 +38,7 @@ class ArtistsPagerActivity : BaseActivity(), ArtistsPagerView, ViewPager.OnPageC
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         id = intent.extras.getLong("ID")
         toolbarTitle?.setText(R.string.title_activity_artists)
+        viewPager = findViewById(R.id.artists_pager_view_pager) as ViewPager
         viewPager.setOffscreenPageLimit(2)
         viewPager.setAdapter(adapter)
     }
