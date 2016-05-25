@@ -17,155 +17,38 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-        <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/white"
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
-        android:paddingTop="15dp"
-        android:paddingBottom="15dp">
-        <com.embassat.view.ApercuTextView
-            tools:text="Dissabte"
-            android:text="@string/extres_item_title_1"
-            android:textColor="@color/primary"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <com.embassat.view.ApercuTextView
-            tools:text="22:00"
-            android:text="@string/extres_item_time_1"
-            android:layout_gravity="center"
-            android:textColor="@color/primary"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <com.embassat.view.ApercuTextView
-            tools:text="Principal"
-            android:text="@string/extres_item_place_1"
-            android:layout_gravity="right"
-            android:textColor="@color/primary"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </FrameLayout>
-
-            <LinearLayout
-                android:layout_marginTop="@dimen/activity_vertical_margin"
-                android:layout_marginBottom="@dimen/activity_vertical_margin"
-                android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                android:layout_marginRight="@dimen/activity_horizontal_margin"
-                android:orientation="vertical"
+            <ImageView
+                android:id="@+id/embassat_image"
+                android:scaleType="centerCrop"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="200dp"/>
 
-                <TextView
-                    android:text="@string/extres_item_day_1"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/primary"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
-
-                <TextView
-                    android:layout_marginTop="20dp"
-                    android:text="@string/extres_text_1_a"
-                    android:textSize="16sp"
-                    android:textColor="@android:color/white"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
-
-                <TextView
-                    android:layout_marginTop="20dp"
-                    android:text="@string/extres_text_1_b"
-                    android:textSize="16sp"
-                    android:textColor="@android:color/white"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
-
-                <TextView
-                    android:layout_marginTop="20dp"
-                    android:text="@string/extres_text_1_c"
-                    android:textSize="16sp"
-                    android:textColor="@android:color/white"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
-
-            </LinearLayout>
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/white"
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
-        android:paddingTop="15dp"
-        android:paddingBottom="15dp">
-        <com.embassat.view.ApercuTextView
-            tools:text="Dissabte"
-            android:text="@string/extres_item_title_2"
-            android:textColor="@color/primary"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <com.embassat.view.ApercuTextView
-            tools:text="22:00"
-            android:text="@string/extres_item_time_2"
-            android:layout_gravity="center"
-            android:textColor="@color/primary"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <com.embassat.view.ApercuTextView
-            tools:text="Principal"
-            android:text="@string/extres_item_place_2"
-            android:layout_gravity="right"
-            android:textColor="@color/primary"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </FrameLayout>
-
-            <LinearLayout
-                android:layout_marginTop="@dimen/activity_vertical_margin"
-                android:layout_marginBottom="@dimen/activity_vertical_margin"
-                android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                android:layout_marginRight="@dimen/activity_horizontal_margin"
-                android:orientation="vertical"
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:paddingBottom="20dp">
 
-                <TextView
-                    android:text="@string/extres_text_2_a"
-                    android:textSize="16sp"
-                    android:textColor="@android:color/white"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                <com.embassat.view.ApercuTextView
+                    android:text="@string/petitem_title"
+                    style="@style/InfoTitle" />
+            </FrameLayout>
 
-                <TextView
-                    android:layout_marginTop="20dp"
-                    android:text="@string/extres_text_2_b"
-                    android:textSize="16sp"
-                    android:textColor="@android:color/white"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+            <com.embassat.view.ApercuTextView
+                android:text="@string/petitem_schedule"
+                style="@style/InfoText" />
 
-                <TextView
-                    android:text="@string/extres_text_2_c"
-                    android:textSize="16sp"
-                    android:textColor="@android:color/white"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+            <com.embassat.view.ApercuTextView
+                android:text="@string/petitem_text"
+                style="@style/InfoText" />
 
-                <TextView
-                    android:text="@string/extres_text_2_d"
-                    android:textSize="16sp"
-                    android:textColor="@android:color/white"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+            <com.embassat.view.ApercuTextView
+                android:text="@string/petitem_music"
+                style="@style/InfoText" />
 
-                <TextView
-                    android:text="@string/extres_text_2_e"
-                    android:textSize="16sp"
-                    android:textColor="@android:color/white"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
-
-            </LinearLayout>
+            <com.embassat.view.ApercuTextView
+                android:text="@string/petitem_acting"
+                style="@style/InfoText" />
 
 
         </LinearLayout>
