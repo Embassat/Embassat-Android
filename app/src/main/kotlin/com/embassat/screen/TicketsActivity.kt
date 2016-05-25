@@ -1,7 +1,9 @@
 package com.embassat.screen
 
 import android.text.Html
+import android.widget.ImageView
 import android.widget.TextView
+import com.bumptech.glide.Glide
 import com.embassat.R
 import com.embassat.base.BaseActivity
 import com.embassat.extension.openWeb
@@ -13,7 +15,7 @@ import com.embassat.extension.openWeb
 
 public class TicketsActivity : BaseActivity() {
 
-    val ticketeaUrl = "https://www.ticketea.com/entrades-embassat-2015/"
+    val ticketeaUrl = "http://entradium.com/sites/MjQ0Mg=="
 
     override val layoutResource: Int = R.layout.activity_tickets
 
@@ -25,6 +27,8 @@ public class TicketsActivity : BaseActivity() {
         findViewById(R.id.compra_abonament_button).setOnClickListener{openWeb(ticketeaUrl)}
         findViewById(R.id.compra_entrada_dia_button).setOnClickListener{openWeb(ticketeaUrl)}
         findViewById(R.id.compra_entrada_petit_em_button).setOnClickListener{openWeb(ticketeaUrl)}
-        (findViewById(R.id.activity_tickets_warning_text_view) as TextView).setText(Html.fromHtml("<font color=#f05158>*</font> <font color=#ffffff>Aforament limitat</font>"))
+
+        val embassatImageView = findViewById(R.id.embassat_image) as ImageView
+        Glide.with(this).load(R.drawable.groc).into(embassatImageView)
     }
 }

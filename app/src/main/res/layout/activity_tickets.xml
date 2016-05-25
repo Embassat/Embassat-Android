@@ -19,6 +19,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <ImageView
+            android:id="@+id/embassat_image"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+
         <com.embassat.view.ApercuTextView
             android:text="@string/tickets_subtitle_1"
             style="@style/InfoTitle" />
@@ -26,7 +32,7 @@
         <com.embassat.view.ApercuTextView
             android:text="@string/tickets_content_1_1"
             android:id="@+id/compra_abonament_button"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:layout_margin="20dp"
             android:textSize="16sp"
             android:layout_width="match_parent"
@@ -35,7 +41,7 @@
         <com.embassat.view.ApercuTextView
             android:text="@string/tickets_content_1_2"
             android:textSize="16sp"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp"
@@ -49,7 +55,7 @@
         <com.embassat.view.ApercuTextView
             android:text="@string/tickets_content_2_1"
             android:id="@+id/compra_entrada_dia_button"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:layout_margin="20dp"
             android:textSize="16sp"
             android:layout_width="match_parent"
@@ -58,7 +64,7 @@
         <com.embassat.view.ApercuTextView
             android:text="@string/tickets_content_2_2"
             android:textSize="16sp"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp"
@@ -72,13 +78,14 @@
         <com.embassat.view.ApercuTextView
             android:text="@string/tickets_content_3_1"
             android:id="@+id/compra_entrada_petit_em_button"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:layout_margin="20dp"
             android:textSize="16sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <com.embassat.view.ApercuTextView
+            android:text="@string/tickets_content_3"
             android:id="@+id/activity_tickets_warning_text_view"
             android:textSize="16sp"
             android:layout_marginLeft="20dp"
