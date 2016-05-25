@@ -19,13 +19,13 @@
         <com.embassat.view.ApercuTextView
             android:id="@+id/hora_inici_text_view"
             android:textStyle="bold"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <com.embassat.view.ApercuTextView
             android:id="@+id/hora_final_text_view"
             android:textStyle="bold"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
@@ -41,7 +41,7 @@
             android:id="@+id/artist_name_text_view"
             android:textStyle="bold"
             android:textAllCaps="true"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <com.embassat.view.ApercuTextView
