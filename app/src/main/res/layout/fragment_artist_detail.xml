@@ -60,7 +60,7 @@
             tools:text="Principal"
             android:layout_marginTop="30dp"
             android:id="@+id/artist_detail_fragment_description"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>

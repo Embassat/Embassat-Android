@@ -62,7 +62,7 @@ class ArtistsPagerActivity : BaseActivity(), ArtistsPagerView, ViewPager.OnPageC
         if (NotificationScheduler().existsNotification(this, id.toInt()))
             menuItem?.getIcon()?.setColorFilter(getResources().getColor(android.R.color.white), PorterDuff.Mode.MULTIPLY)
         else
-            menuItem?.getIcon()?.setColorFilter(getResources().getColor(R.color.background), PorterDuff.Mode.MULTIPLY)
+            menuItem?.getIcon()?.setColorFilter(getResources().getColor(R.color.gray_background), PorterDuff.Mode.MULTIPLY)
 
         return true
     }
@@ -93,7 +93,7 @@ class ArtistsPagerActivity : BaseActivity(), ArtistsPagerView, ViewPager.OnPageC
         if (NotificationScheduler().existsNotification(this, id.toInt()))
             menuItem?.getIcon()?.setColorFilter(getResources().getColor(android.R.color.white), PorterDuff.Mode.MULTIPLY)
         else
-            menuItem?.getIcon()?.setColorFilter(getResources().getColor(R.color.background), PorterDuff.Mode.MULTIPLY)
+            menuItem?.getIcon()?.setColorFilter(getResources().getColor(R.color.gray_background), PorterDuff.Mode.MULTIPLY)
     }
 
     override fun onPageSelected(position: Int) {

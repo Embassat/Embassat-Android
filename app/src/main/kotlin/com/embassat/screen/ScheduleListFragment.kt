@@ -24,7 +24,7 @@ public class ScheduleListFragment : Fragment(), ArtistsScheduleView, Injector by
 
     private val EXTRA_POSITION = "extra_position"
 
-    val adapter: ScheduleListAdapter = ScheduleListAdapter()
+    var adapter: ScheduleListAdapter? = null;
     var presenter : ArtistsSchedulePresenter? = null
     var position : Int = 0;
 
@@ -41,6 +41,7 @@ public class ScheduleListFragment : Fragment(), ArtistsScheduleView, Injector by
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         var artistsRecyclerView = view.findViewById(R.id.scheduleListRecyclerView) as RecyclerView;
         artistsRecyclerView.layoutManager = LinearLayoutManager(getActivity())
+        adapter = ScheduleListAdapter(activity)
         artistsRecyclerView.adapter = adapter
     }
 
@@ -55,7 +56,7 @@ public class ScheduleListFragment : Fragment(), ArtistsScheduleView, Injector by
     }
 
     override fun showArtists(artists: List<ArtistSchedule>) {
-        adapter.items = artists
-        adapter.notifyDataSetChanged()
+        adapter?.items = artists
+        adapter?.notifyDataSetChanged()
     }
 }
