@@ -7,6 +7,8 @@ import com.embassat.domain.interactor.event.ArtistsEvent
 import com.embassat.presentation.entity.mapper.ArtistScheduleMapper
 import com.embassat.presentation.view.ArtistsPagerView
 import com.embassat.presentation.view.ArtistsScheduleView
+import org.jetbrains.anko.async
+import org.jetbrains.anko.uiThread
 
 /**
  * Created by Quique on 1/6/15.
@@ -22,10 +24,11 @@ class ArtistsSchedulePresenter(
 
     override fun onResume() {
         super.onResume()
-        interactorExecutor.execute(artistsInteractor)
-    }
-
-    fun onEvent(event: ArtistsEvent) {
-        view.showArtists(mapper.transformArtists(event.artists, mapper.position))
+        async() {
+            val artists = artistsInteractor.getArtists()
+            uiThread {
+                view.showArtists(mapper.transformArtists(artists, mapper.position))
+            }
+        }
     }
 }

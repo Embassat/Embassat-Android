@@ -4,7 +4,7 @@
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primaryDark</item>
         <item name="colorAccent">@color/background</item>
-        <item name="android:windowBackground">@color/background</item>
+        <item name="android:windowBackground">@android:color/white</item>
     </style>
 
     <style name="EmbassatTheme.NoActionBar">
@@ -35,7 +35,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/info_text_text_size</item>
         <item name="android:layout_margin">@dimen/info_title_margin</item>
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@android:color/black</item>
     </style>
 
 </resources>

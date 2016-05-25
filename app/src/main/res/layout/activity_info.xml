@@ -41,12 +41,14 @@
 
                 <ImageView
                     android:id="@+id/principal_image"
+                    android:visibility="gone"
                     android:scaleType="centerCrop"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"/>
 
             <FrameLayout
                 android:layout_width="match_parent"
+                android:visibility="gone"
                 android:layout_height="wrap_content"
                 android:background="@android:color/white"
                 android:paddingBottom="20dp">
@@ -58,17 +60,20 @@
             </FrameLayout>
 
                 <com.embassat.view.ApercuTextView
+                    android:visibility="gone"
                     android:text="@string/info_second_section_content"
                     style="@style/InfoText" />
 
                 <ImageView
                     android:id="@+id/amfiteatre_image"
+                    android:visibility="gone"
                     android:scaleType="centerCrop"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"/>
 
             <FrameLayout
                 android:layout_width="match_parent"
+                android:visibility="gone"
                 android:layout_height="wrap_content"
                 android:background="@android:color/white"
                 android:paddingBottom="20dp">
@@ -80,17 +85,20 @@
             </FrameLayout>
 
                 <com.embassat.view.ApercuTextView
+                    android:visibility="gone"
                     android:text="@string/info_third_section_content"
                     style="@style/InfoText" />
 
                 <ImageView
                     android:id="@+id/mirador_image"
+                    android:visibility="gone"
                     android:scaleType="centerCrop"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"/>
 
             <FrameLayout
                 android:layout_width="match_parent"
+                android:visibility="gone"
                 android:layout_height="wrap_content"
                 android:background="@android:color/white"
                 android:paddingBottom="20dp">
@@ -102,6 +110,7 @@
             </FrameLayout>
 
                 <com.embassat.view.ApercuTextView
+                    android:visibility="gone"
                     android:text="@string/info_fourth_section_content"
                     style="@style/InfoText" />
 

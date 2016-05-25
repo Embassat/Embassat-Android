@@ -22,16 +22,11 @@ class ArtistsPagerPresenter(
 
     override fun onResume() {
         super.onResume()
-        //interactorExecutor.execute(artistsInteractor)
         async() {
-            var artists = artistsInteractor.getArtists()
+            val artists = artistsInteractor.getArtists()
             uiThread {
                 view.showArtists(mapper.transformArtists(artists))
             }
         }
-    }
-
-    fun onEvent(event: ArtistsEvent) {
-        view.showArtists(mapper.transformArtists(event.artists))
     }
 }

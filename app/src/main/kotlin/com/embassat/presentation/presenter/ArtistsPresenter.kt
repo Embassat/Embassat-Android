@@ -39,10 +39,6 @@ class ArtistsPresenter(
         }
     }
 
-    fun onEvent(event: ArtistsEvent) {
-        view.showArtists(mapper.transformArtists(event.artists))
-    }
-
     fun onArtistClicked(item: ArtistName) {
         view.navigateToDetail(item.id)
     }

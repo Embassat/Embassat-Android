@@ -56,5 +56,6 @@ public class ScheduleListFragment : Fragment(), ArtistsScheduleView, Injector by
 
     override fun showArtists(artists: List<ArtistSchedule>) {
         adapter.items = artists
+        adapter.notifyDataSetChanged()
     }
 }

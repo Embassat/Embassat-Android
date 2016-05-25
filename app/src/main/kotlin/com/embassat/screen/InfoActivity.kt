@@ -19,16 +19,8 @@ public class InfoActivity : BaseActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         toolbarTitle?.setText(R.string.title_activity_info)
 
-
         val embassatImageView = findViewById(R.id.embassat_image) as ImageView
-        val escenariImageView = findViewById(R.id.principal_image) as ImageView
-        val amfiteatreImageView = findViewById(R.id.amfiteatre_image) as ImageView
-        val miradorImageView = findViewById(R.id.mirador_image) as ImageView
-
-        Glide.with(this).load(R.drawable.embassat).into(embassatImageView)
-        Glide.with(this).load(R.drawable.principal).into(escenariImageView)
-        Glide.with(this).load(R.drawable.amfiteatre).into(amfiteatreImageView)
-        Glide.with(this).load(R.drawable.mirador).into(miradorImageView)
+        Glide.with(this).load(R.drawable.info).into(embassatImageView)
     }
 
 }

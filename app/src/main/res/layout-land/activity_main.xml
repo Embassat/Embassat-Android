@@ -2,7 +2,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:background="@android:color/black">
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -24,6 +25,11 @@
             android:layout_marginTop="@dimen/main_option_text_margin_top"
             style="@style/MainMenuOptionText"
             android:text="@string/main_option_schedule"/>
+        <com.embassat.view.NoeDisplayTextView
+            android:id="@+id/main_option_extra"
+            android:layout_marginTop="@dimen/main_option_text_margin_top"
+            style="@style/MainMenuOptionText"
+            android:text="@string/main_option_extra"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="0dp"
@@ -32,7 +38,12 @@
         android:gravity="center"
         android:orientation="vertical">
         <com.embassat.view.NoeDisplayTextView
+            android:id="@+id/main_option_transport"
+            style="@style/MainMenuOptionText"
+            android:text="@string/main_option_transport"/>
+        <com.embassat.view.NoeDisplayTextView
             android:id="@+id/main_option_map"
+            android:layout_marginTop="@dimen/main_option_text_margin_top"
             android:textColor="@drawable/selectable_text_color"
             style="@style/MainMenuOptionText"
             android:text="@string/main_option_map"/>
@@ -41,10 +52,5 @@
             android:layout_marginTop="@dimen/main_option_text_margin_top"
             style="@style/MainMenuOptionText"
             android:text="@string/main_option_tickets"/>
-        <com.embassat.view.NoeDisplayTextView
-            android:id="@+id/main_option_extra"
-            android:layout_marginTop="@dimen/main_option_text_margin_top"
-            style="@style/MainMenuOptionText"
-            android:text="@string/main_option_extra"/>
     </LinearLayout>
 </LinearLayout>

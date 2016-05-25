@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@android:color/black">
     <com.embassat.view.NoeDisplayTextView
         android:id="@+id/main_option_info"
         style="@style/MainMenuOptionText"
@@ -19,6 +20,16 @@
         style="@style/MainMenuOptionText"
         android:text="@string/main_option_schedule"/>
     <com.embassat.view.NoeDisplayTextView
+        android:id="@+id/main_option_extra"
+        android:layout_marginTop="@dimen/main_option_text_margin_top"
+        style="@style/MainMenuOptionText"
+        android:text="@string/main_option_extra"/>
+    <com.embassat.view.NoeDisplayTextView
+        android:id="@+id/main_option_transport"
+        android:layout_marginTop="@dimen/main_option_text_margin_top"
+        style="@style/MainMenuOptionText"
+        android:text="@string/main_option_transport"/>
+    <com.embassat.view.NoeDisplayTextView
         android:id="@+id/main_option_map"
         android:layout_marginTop="@dimen/main_option_text_margin_top"
         style="@style/MainMenuOptionText"
@@ -28,9 +39,4 @@
         android:layout_marginTop="@dimen/main_option_text_margin_top"
         style="@style/MainMenuOptionText"
         android:text="@string/main_option_tickets"/>
-    <com.embassat.view.NoeDisplayTextView
-        android:id="@+id/main_option_extra"
-        android:layout_marginTop="@dimen/main_option_text_margin_top"
-        style="@style/MainMenuOptionText"
-        android:text="@string/main_option_extra"/>
 </LinearLayout>

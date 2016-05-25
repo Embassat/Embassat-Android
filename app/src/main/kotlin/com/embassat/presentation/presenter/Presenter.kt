@@ -11,10 +11,10 @@ interface Presenter<T> {
     val bus: Bus
 
     fun onResume(){
-        bus.register(this)
+        //bus.register(this)
     }
 
     fun onPause(){
-        bus.unregister(this)
+        //bus.unregister(this)
     }
 }
