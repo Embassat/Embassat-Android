@@ -39,6 +39,9 @@
         <activity android:name=".screen.InfoActivity"
             android:theme="@style/EmbassatTheme.NoActionBar"
             android:parentActivityName=".screen.MainActivity"/>
+        <activity android:name=".screen.TransportActivity"
+            android:theme="@style/EmbassatTheme.NoActionBar"
+            android:parentActivityName=".screen.MainActivity"/>
         <activity android:name=".screen.ArtistsActivity"
             android:theme="@style/EmbassatTheme.NoActionBar"
             android:parentActivityName=".screen.MainActivity" />

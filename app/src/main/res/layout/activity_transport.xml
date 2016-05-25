@@ -30,26 +30,17 @@
                 android:paddingBottom="20dp">
 
                 <com.embassat.view.ApercuTextView
-                    android:text="@string/petitem_title"
+                    android:text="@string/transport_title"
                     style="@style/InfoTitle" />
             </FrameLayout>
 
             <com.embassat.view.ApercuTextView
-                android:text="@string/petitem_schedule"
+                android:text="@string/transport_text"
                 style="@style/InfoText" />
 
             <com.embassat.view.ApercuTextView
-                android:text="@string/petitem_text"
+                android:text="@string/transport_optionc"
                 style="@style/InfoText" />
-
-            <com.embassat.view.ApercuTextView
-                android:text="@string/petitem_music"
-                style="@style/InfoText" />
-
-            <com.embassat.view.ApercuTextView
-                android:text="@string/petitem_acting"
-                style="@style/InfoText" />
-
 
         </LinearLayout>
     </ScrollView>

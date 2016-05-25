@@ -69,6 +69,8 @@
 
     <string name="petitem_title">Petit Embassa\'t</string>
     <string name="transport_title">Transport</string>
+    <string name="transport_text">Sigues sostenible i vine a peu, amb bicicleta o transport públic:</string>
+    <string name="transport_optionc">- Just a 2 minuts de la parada Sabadell Estació S2 FGC.\n- Si vens amb cotxe. Entrada Sabadell Centre de la C-58, hi ha amplia zona de pàrking gratuïta ben a prop del recinte.</string>
     <string name="petitem_schedule">Dissabte 11 de Juliol de 17:00 a 20:00</string>
     <string name="petitem_text">Conviure, compartir, créixer, enriquir, gaudir, recordar… hi ha mil i un moments especials per pares i fills, és per això que també volem tenir una primera experiència amb el festival, els concerts, la música, amics, família, tallers, experiències, sensacions diferents en una jornada extraordinària per tots. El Petit Embassa\'t vol ser tot això, però de ben segur que per cadascuna de les famílies pot arribar a ser molt més. Veniu a passar la tarda amb tota aquesta programació pensada pels més petits que de ben segur farà gaudir als més grans.</string>
     <string name="petitem_music">TALLERS MUSICALS:\n- Construcció de sonalls\n- El rocker del Embassa\'t\n- Taumàtrop\n- Caminant per les sensacions</string>
