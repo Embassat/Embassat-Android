@@ -9,6 +9,7 @@
 
     <color name="primary">#000000</color>
     <color name="primaryDark">#000000</color>
+    <color name="gray_background">#ddd</color>
     <color name="background">#ffffff</color>
     <color name="tab_background">#fff9c5c2</color>
     <color name="tab_background_selected">#fffc7f85</color>

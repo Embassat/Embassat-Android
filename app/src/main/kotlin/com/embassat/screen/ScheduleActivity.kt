@@ -45,9 +45,9 @@ public class ScheduleActivity : BaseActivity() {
         val tabBarView = findViewById(R.id.days_header_tabbar) as ViewGroup
         for (i in 0..tabBarView.childCount -1) {
             val tabView = tabBarView.getChildAt(i) as RelativeLayout
-            tabView.setBackgroundColor(if (i == position) resources.getColor(R.color.tab_background_selected) else resources.getColor(R.color.tab_background))
+            tabView.setBackgroundColor(if (i == position) resources.getColor(android.R.color.white) else resources.getColor(android.R.color.black))
             val tabTextView = tabView.getChildAt(0) as TextView
-            tabTextView.setTextColor(if (i == position) resources.getColor(android.R.color.white) else resources.getColor(R.color.primary))
+            tabTextView.setTextColor(if (i == position) resources.getColor(android.R.color.black) else resources.getColor(android.R.color.white))
         }
     }
 }

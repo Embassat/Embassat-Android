@@ -1,10 +1,9 @@
-
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/gray_background"
     tools:ignore="MergeRootFrame">
 
     <include layout="@layout/toolbar"/>
@@ -19,12 +18,12 @@
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:background="@color/tab_background"
+            android:background="@android:color/black"
             android:layout_weight="1">
             <com.embassat.view.ApercuTextView
                 android:text="@string/horaris_tab1"
                 android:textSize="18sp"
-                android:textColor="@color/primary"
+                android:textColor="@android:color/white"
                 android:layout_centerInParent="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -32,12 +31,12 @@
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:background="@color/tab_background"
+            android:background="@android:color/black"
             android:layout_weight="1">
             <com.embassat.view.ApercuTextView
                 android:text="@string/horaris_tab2"
                 android:textSize="18sp"
-                android:textColor="@color/primary"
+                android:textColor="@android:color/white"
                 android:layout_centerInParent="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -45,12 +44,12 @@
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:background="@color/tab_background"
+            android:background="@android:color/black"
             android:layout_weight="1">
             <com.embassat.view.ApercuTextView
                 android:text="@string/horaris_tab3"
                 android:textSize="18sp"
-                android:textColor="@color/primary"
+                android:textColor="@android:color/white"
                 android:layout_centerInParent="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
