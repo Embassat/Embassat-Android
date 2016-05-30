@@ -14,4 +14,6 @@ data class ArtistDetail(val id: Long,
                         val stage: String,
                         val imageURL: String,
                         val real_start_date: String,
-                        val real_time_in_milis: Long) : Serializable
+                        val real_time_in_milis: Long,
+                        val youtubeID: String,
+                        val youtubeURL: String) : Serializable

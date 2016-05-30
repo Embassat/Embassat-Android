@@ -25,7 +25,7 @@ class ArtistRepositoryImp(val artistDataSets: List<ArtistDataSet>) : ArtistRepos
             var result = dataSet.requestArtist(id)
             return result;
         }
-        return Artist(-1, "empty", "empty", "empty", "empty", "empty", "empty", "empty")
+        return Artist(-1, "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty")
     }
 
 }

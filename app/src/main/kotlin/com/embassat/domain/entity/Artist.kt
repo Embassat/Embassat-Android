@@ -10,4 +10,5 @@ data class Artist (val id: Long,
                    val end_date: String,
                    val scenario: String,
                    val description: String,
-                   val shareURL: String)
+                   val shareURL: String,
+                   val youtubeViewId: String)

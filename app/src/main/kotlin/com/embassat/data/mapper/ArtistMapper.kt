@@ -21,6 +21,7 @@ class ArtistMapper {
             artist.end_date,
             artist.stage,
             artist.description,
-            artist.share_url)
+            artist.share_url,
+            artist.youtube_video_id)
 
 }

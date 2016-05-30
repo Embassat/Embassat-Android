@@ -34,7 +34,8 @@ class ArtistDetailMapper() {
                 6 -> dayString = "Divendres"
                 7 -> dayString = "Dissabte"
             }
-            ArtistDetail(it.id, it.name, it.description, dayString, time, it.scenario, it.imageURL, it.start_date, start_time_in_milis)
+            val youtubeUrl = "https://www.youtube.com/watch?v="+it.youtubeViewId
+            ArtistDetail(it.id, it.name, it.description, dayString, time, it.scenario, it.imageURL, it.start_date, start_time_in_milis, it.youtubeViewId, youtubeUrl)
         })
     }
 }
