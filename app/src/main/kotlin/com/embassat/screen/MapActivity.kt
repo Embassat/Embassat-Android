@@ -28,12 +28,9 @@ class MapActivity : BaseActivity() {
     }
 
     private fun showAllMarkers(googleMap: GoogleMap) {
-        googleMap.addMarker(MarkerOptions().position(LatLng(41.553602, 2.099773)).title("Escenari Principal"))
-        googleMap.addMarker(MarkerOptions().position(LatLng(41.554052, 2.099800)).title("Yeearphone"))
-        googleMap.addMarker(MarkerOptions().position(LatLng(41.545738, 2.106824)).title("Mirador Museu del Gas"))
-
-        googleMap.addMarker(MarkerOptions().position(LatLng(41.5493037, 2.1083694)).title("Balboa").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN)))
-        googleMap.addMarker(MarkerOptions().position(LatLng(41.5460348, 2.1132087)).title("Kräsna").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN)))
+        googleMap.addMarker(MarkerOptions().position(LatLng(41.5455645, 2.1046665)).title("Museu del Gas"))
+        googleMap.addMarker(MarkerOptions().position(LatLng(41.5417171, 2.0969444)).title("Can Marcet"))
+        googleMap.addMarker(MarkerOptions().position(LatLng(41.5464176, 2.1068468)).title("Pç del Dr Robert"))
 
         val center = CameraUpdateFactory.newLatLng(LatLng(41.546838, 2.106564))
         val zoom = CameraUpdateFactory.zoomTo(16f)
