@@ -39,4 +39,9 @@
         android:layout_marginTop="@dimen/main_option_text_margin_top"
         style="@style/MainMenuOptionText"
         android:text="@string/main_option_tickets"/>
+    <com.embassat.view.NoeDisplayTextView
+        android:id="@+id/main_option_playlist"
+        android:layout_marginTop="@dimen/main_option_text_margin_top"
+        style="@style/MainMenuOptionText"
+        android:text="@string/main_option_playlist"/>
 </LinearLayout>

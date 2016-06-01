@@ -12,7 +12,6 @@
         android:orientation="vertical">
         <com.embassat.view.NoeDisplayTextView
             android:id="@+id/main_option_info"
-            android:textColor="@drawable/selectable_text_color"
             style="@style/MainMenuOptionText"
             android:text="@string/main_option_info"/>
         <com.embassat.view.NoeDisplayTextView
@@ -44,7 +43,6 @@
         <com.embassat.view.NoeDisplayTextView
             android:id="@+id/main_option_map"
             android:layout_marginTop="@dimen/main_option_text_margin_top"
-            android:textColor="@drawable/selectable_text_color"
             style="@style/MainMenuOptionText"
             android:text="@string/main_option_map"/>
         <com.embassat.view.NoeDisplayTextView
@@ -52,5 +50,10 @@
             android:layout_marginTop="@dimen/main_option_text_margin_top"
             style="@style/MainMenuOptionText"
             android:text="@string/main_option_tickets"/>
+        <com.embassat.view.NoeDisplayTextView
+            android:id="@+id/main_option_playlist"
+            android:layout_marginTop="@dimen/main_option_text_margin_top"
+            style="@style/MainMenuOptionText"
+            android:text="@string/main_option_playlist"/>
     </LinearLayout>
 </LinearLayout>
