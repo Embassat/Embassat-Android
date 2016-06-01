@@ -26,8 +26,8 @@ allprojects {
         androidTargetSdkVersion = 22
         androidCompileSdkVersion = 22
         androidApplicationId = "com.embassat"
-        androidVersionCode = 2
-        androidVersionName = "2.0"
+        androidVersionCode = 30000
+        androidVersionName = "3.0.0"
         supportVersion = "22.1.1"
 
         // Libraries
