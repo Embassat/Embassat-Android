@@ -15,7 +15,7 @@ import java.util.ArrayList
 class ScheduleFragmentAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
 
     override fun getCount(): Int {
-        return 3
+        return 4
     }
 
     override fun getItem(position: Int): Fragment {

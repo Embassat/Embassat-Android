@@ -35,9 +35,13 @@
                     style="@style/InfoTitle" />
             </FrameLayout>
 
-                <com.embassat.view.ApercuTextView
-                    android:text="@string/info_first_section_content"
-                    style="@style/InfoText" />
+            <com.embassat.view.ApercuTextView
+                android:text="@string/info_first_section_content"
+                style="@style/InfoText" />
+
+            <com.embassat.view.ApercuTextView
+                android:text="@string/info_first_section_sub"
+                style="@style/InfoText" />
 
                 <ImageView
                     android:id="@+id/principal_image"

@@ -12,7 +12,7 @@
     <LinearLayout
         android:id="@+id/days_header_tabbar"
         android:orientation="horizontal"
-        android:weightSum="3"
+        android:weightSum="4"
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize">
         <RelativeLayout
@@ -48,6 +48,19 @@
             android:layout_weight="1">
             <com.embassat.view.ApercuTextView
                 android:text="@string/horaris_tab3"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:layout_weight="1">
+            <com.embassat.view.ApercuTextView
+                android:text="@string/horaris_tab4"
                 android:textSize="18sp"
                 android:textColor="@android:color/white"
                 android:layout_centerInParent="true"

@@ -15,7 +15,7 @@ class ArtistScheduleMapper(position: Int) {
 
     fun transformArtists(artists: List<Artist>, position: Int): List<ArtistSchedule> {
         return artists.map({
-            val format = SimpleDateFormat("yyyy-MM-dd'T'hh:mm:ss")
+            val format = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss")
             val cal = GregorianCalendar()
 
             val start_date = format.parse(it.start_date)
@@ -60,6 +60,8 @@ class ArtistScheduleMapper(position: Int) {
                 it.day == "Divendres"
             else if (position == 2)
                 it.day == "Dissabte"
+            else if (position == 3)
+                it.day == "Diumenge"
             else false
         }.sortedBy { it.real_start_date }
     }
