@@ -1,9 +1,6 @@
-package com.embassat.data.embassat.model
+package com.embassat.data.api.model
 
-/**
- * Created by Quique on 14/04/15.
- */
-data class EmbassatArtist (
+data class ArtistApi(
         val id: Long,
         val name: String,
         val description: String,

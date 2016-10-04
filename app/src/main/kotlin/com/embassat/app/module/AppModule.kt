@@ -1,6 +1,7 @@
-package com.embassat
+package com.embassat.app.module
 
 import android.content.Context
+import com.embassat.App
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton

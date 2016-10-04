@@ -1,13 +1,8 @@
-package com.embassat.repository.dataset
+package com.embassat.data
 
 import com.embassat.domain.entity.Artist
 
-/**
- * Created by Quique on 20/05/15.
- */
-
-public interface ArtistDataSet {
-
+interface ArtistDataSource {
     fun requestArtists(): List<Artist>
     fun requestArtist(id: Long): Artist
 }

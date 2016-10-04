@@ -2,15 +2,15 @@ package com.embassat.repository
 
 import com.embassat.domain.entity.Artist
 import com.embassat.domain.repository.ArtistRepository
-import com.embassat.repository.dataset.ArtistDataSet
+import com.embassat.data.ArtistDataSource
 
 /**
  * Created by Quique on 20/05/15.
  */
-class ArtistRepositoryImp(val artistDataSets: List<ArtistDataSet>) : ArtistRepository {
+class ArtistRepositoryImp(val artistDataSources: List<ArtistDataSource>) : ArtistRepository {
 
     override fun getArtists(): List<Artist> {
-        for (dataSet in artistDataSets) {
+        for (dataSet in artistDataSources) {
             var result = dataSet.requestArtists()
             if (result.isNotEmpty()) {
                 return result
@@ -21,7 +21,7 @@ class ArtistRepositoryImp(val artistDataSets: List<ArtistDataSet>) : ArtistRepos
 
     override fun getArtist(id: Long): Artist {
         // TODO test if result can be null
-        for (dataSet in artistDataSets) {
+        for (dataSet in artistDataSources) {
             var result = dataSet.requestArtist(id)
             return result;
         }
