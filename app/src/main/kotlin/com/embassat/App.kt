@@ -1,12 +1,7 @@
 package com.embassat
 
 import android.app.Application
-import com.embassat.domain.*
 import com.embassat.module.*
-
-/**
- * Created by Quique on 20/05/15.
- */
 
 class App : Application() {
 
