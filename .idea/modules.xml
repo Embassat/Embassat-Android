@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Embassat-Android.iml" filepath="$PROJECT_DIR$/Embassat-Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/embassat2016kitlin.iml" filepath="$PROJECT_DIR$/embassat2016kitlin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/embassatKotlin.iml" filepath="$PROJECT_DIR$/embassatKotlin.iml" />
       <module fileurl="file://$PROJECT_DIR$/libraries/libraries.iml" filepath="$PROJECT_DIR$/libraries/libraries.iml" />
       <module fileurl="file://$PROJECT_DIR$/libraries/rxkotlin/rxkotlin.iml" filepath="$PROJECT_DIR$/libraries/rxkotlin/rxkotlin.iml" />
     </modules>
