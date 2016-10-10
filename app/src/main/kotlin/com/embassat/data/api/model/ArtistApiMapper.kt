@@ -1,20 +1,8 @@
 package com.embassat.data.api.model
 
-import com.embassat.domain.entity.Artist
+import com.embassat.data.model.ArtistData
 
-class ArtistApiMapper {
-    fun transform(apis: List<ArtistApi>): List<Artist> {
-        return apis.map { transform(it) }
-    }
-
-    fun transform(api: ArtistApi): Artist = Artist(
-            api.id,
-            api.name,
-            api.start_date,
-            api.image_url,
-            api.end_date,
-            api.stage,
-            api.description,
-            api.share_url,
-            api.youtube_video_id)
+interface ArtistApiMapper {
+    fun map(source: List<ArtistApi>): List<ArtistData>
+    fun map(source: ArtistApi): ArtistData
 }

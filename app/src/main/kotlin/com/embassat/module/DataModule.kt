@@ -1,6 +1,6 @@
 package com.embassat.module
 
-import com.embassat.data.api.EmbassatService
+import com.embassat.data.api.retrofit.EmbassatService
 import retrofit.RestAdapter
 
 /**

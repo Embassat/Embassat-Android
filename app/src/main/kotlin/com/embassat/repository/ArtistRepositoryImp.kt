@@ -2,7 +2,7 @@ package com.embassat.repository
 
 import com.embassat.domain.entity.Artist
 import com.embassat.domain.repository.ArtistRepository
-import com.embassat.data.ArtistDataSource
+import com.embassat.data.datasource.ArtistDataSource
 
 /**
  * Created by Quique on 20/05/15.

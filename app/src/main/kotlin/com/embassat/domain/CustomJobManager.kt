@@ -14,7 +14,6 @@ class CustomJobManager(context: Context) : JobManager(context, CustomJobManager.
         private val TAG = "JOBS"
 
         private fun getJobManagerConfiguration(context: Context): Configuration {
-
             return Configuration.Builder(context)
                     .minConsumerCount(1)    // always keep at least one consumer alive
                     .maxConsumerCount(3)    // up to 3 consumers at NextOnEditorActionListener time

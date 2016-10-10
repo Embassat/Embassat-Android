@@ -5,7 +5,7 @@ import com.embassat.screen.ArtistsActivity
 import dagger.Component
 
 @PerView
-@Component(dependencies = arrayOf(CloudComponent::class))
+@Component(dependencies = arrayOf(ApiComponent::class))
 interface ArtistsViewComponent {
     fun inject(artistsActivity: ArtistsActivity)
 }

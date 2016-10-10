@@ -1,4 +1,4 @@
-package com.embassat.data.api
+package com.embassat.data.api.retrofit
 
 import com.embassat.data.api.model.ArtistApi
 import retrofit.Callback

@@ -1,6 +1,6 @@
 package com.embassat.module
 
-import com.embassat.data.CloudArtistDataSource
+import com.embassat.data.datasource.cloud.CloudArtistDataSource
 import com.embassat.domain.repository.ArtistRepository
 import com.embassat.repository.ArtistRepositoryImp
 
